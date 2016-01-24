@@ -1,0 +1,708 @@
+﻿
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+}
+
+/*Css for login page*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    color: #000;
+    font: 14px Arial;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #563D64;
+}
+
+small {
+    font-size: 10px;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.clearfix:after,
+form:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.container {
+    margin: 25px auto;
+    position: relative;
+    width: 900px;
+}
+
+/*#content {
+            background: #f9f9f9;
+            border: 1px solid #A2A1A1;
+            margin: 0px auto;
+            padding: 25px 0px 0px;
+            position: relative;
+            text-align: center;
+            text-shadow: 0px 1px 0px #FFF;
+            width: 400px;
+            box-shadow: 0px 0px 5px #BFBFBF;
+            margin-top: 120px;
+        }*/
+.login-page, .register-page {
+    background: #fff none repeat scroll 0% 0%;
+}
+
+.login-form {
+    width: 85%;
+    margin: 0 auto;
+    background: #FFF url("../../dist/img/bg1.jpg") no-repeat scroll 0% 0%;
+    background-size: 100% 100%;
+    height: 400px;
+    padding-top: 23px;
+}
+
+.forgot-pass {
+    width: 552px;
+    margin: 0 auto;
+    background: #FFF url("../../dist/img/reset-pass.jpg") no-repeat scroll 0% 0%;
+    background-size: 100% 100%;
+    height: 714px;
+    padding-top: 23px;
+    box-shadow: 0 0 14px 1px #A2A2A2;
+}
+
+    .forgot-pass .form-control {
+        display: block;
+        width: 100%;
+        height: 32px;
+        padding: 6px 12px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.42857;
+        color: #555;
+        background-color: transparent;
+        ;
+        background-image: none;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    }
+
+    .forgot-pass .form-group {
+        margin-bottom: 0px;
+    }
+
+.form-body {
+    position: absolute;
+    bottom: 232px;
+    margin-left: 310px;
+    width: 190px;
+}
+
+.login-back a {
+    position: absolute;
+    bottom: 50px;
+}
+
+.ui-datepicker-trigger {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.input-fields {
+    text-align: center;
+    width: 95.2%;
+    margin-top: 4px;
+}
+
+h1 {
+    color: rgb(6, 93, 128);
+    ;
+    font: bold 25px Helvetica, Arial, sans-serif;
+    letter-spacing: -0.05em;
+    line-height: 20px;
+    margin: 10px 0 30px;
+    text-align: center;
+}
+
+.login-form h1 {
+    color: #fff;
+    font-size: 20px;
+}
+
+#content form {
+    position: relative;
+}
+
+/*form input[type="text"],
+            #content form input[type="password"] {                    
+                transition: all 0.5s ease 0s;
+                background: rgba(117, 100, 100, 0) url("../../dist/img/8bcLQqF.png") no-repeat scroll 0% 0%;
+                border: 0;
+                color: #FFF;
+                font: 13px Helvetica,Arial,sans-serif;
+                margin: 0px 0px 10px;
+                padding: 0px 10px 0px 40px;
+                width: 314px;
+                height: 37px;
+               }*/
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    outline: medium none;
+}
+
+#username {
+    background-position: 10px 10px !important;
+}
+
+#password {
+    background-position: 10px -53px !important;
+}
+
+form input[type="submit"] {
+    background: #176E86;
+    border-radius: 0;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+    border: 1px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+    font: bold 15px Helvetica,Arial,sans-serif;
+    margin: 20px 0px 35px 15px;
+    position: relative;
+    width: 120px;
+    background: #176E86;
+    border-radius: 0;
+    margin: 20px 0px 10px 0;
+    position: relative;
+    width: 130px;
+    padding: 10px 5px;
+}
+
+form.login-form input[type="submit"] {
+    color: #686868;
+    background: #FFF;
+    width: 310px;
+    font-size: 24px;
+}
+
+    form.login-form input[type="submit"]:hover {
+        color: #FFF;
+        border: 1px solid #FFF;
+    }
+
+.login-button.forgot input.btn-block[type="submit"] {
+    width: 166px;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 76px;
+    margin-left: 234px;
+    padding: 8px;
+}
+
+form input[type="submit"]:hover {
+    background: transparent;
+    color: #054568;
+    border: 1px solid #054568;
+}
+
+
+#content form div a {
+    color: #24C7F3;
+    font-size: 19px;
+    margin: 0px auto;
+    text-decoration: underline;
+}
+
+.button {
+    background: rgb(247,249,250);
+    background: -moz-linear-gradient(top, rgba(247,249,250,1) 0%, rgba(240,240,240,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(247,249,250,1) 0%,rgba(240,240,240,1) 100%);
+    background: -o-linear-gradient(top, rgba(247,249,250,1) 0%,rgba(240,240,240,1) 100%);
+    background: -ms-linear-gradient(top, rgba(247,249,250,1) 0%,rgba(240,240,240,1) 100%);
+    background: linear-gradient(top, rgba(247,249,250,1) 0%,rgba(240,240,240,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f9fa', endColorstr='#f0f0f0',GradientType=0 );
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
+    -ms-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid #CFD5D9;
+    padding: 15px 0;
+}
+
+    .button a {
+        background: url('../dist/img/8bcLQqF.png') 0 -112px no-repeat;
+        color: #7E7E7E;
+        font-size: 17px;
+        padding: 2px 0 2px 40px;
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+        .button a:hover {
+            background-position: 0 -135px;
+            color: #00aeef;
+        }
+
+.login-button {
+    width: 95%;
+    display: inline-block;
+    text-align: center;
+}
+/*************end of login page***************/
+.skin-blue .main-header .logo,
+.skin-blue .main-header .logo:hover {
+    background: url("../img/logo.png") no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFF;
+    height: 70px;
+    width: 130px;
+    margin: 3px 0 3px 22px;
+}
+
+.main-header .sidebar-toggle::before {
+    font-size: 30px;
+}
+
+.main-header .sidebar-toggle {
+    padding: 16px;
+}
+
+.main-header {
+    box-shadow: 0 0 6px;
+    position: fixed;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.sidebar {
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.pull-center,
+.main-footer,
+.prefect-div {
+    text-align: center;
+}
+
+.senate-con {
+    margin: 10px;
+}
+
+.senate-profile img {
+    vertical-align: middle;
+    height: 200px;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu {
+    width: 187px;
+    /*margin-top: -15px;*/
+}
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default {
+        color: #FFF;
+        background: #0C2B4E;
+    }
+
+        .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:hover {
+            color: #000;
+            background: #0C2B4E none repeat scroll 0% 0%;
+        }
+
+.main-sidebar,
+.main-header .logo {
+    width: 180px;
+}
+
+.content-wrapper, .right-side, .main-footer, .main-header > .navbar {
+    margin-left: 180px;
+    background-color: #fff;
+}
+
+.content-wrapper {
+    padding: 10px;
+    margin-top: 82px;
+}
+
+.user-panel > .info {
+    font-weight: normal;
+}
+
+.stud-table {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.main-sidebar {
+    position: fixed;
+}
+
+#chartContainer,
+#chartContainer1,
+#chartContainer2,
+#chartContainer3,
+#chartContainer4 {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.chart-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 10px 0px;
+    background: #0A436E;
+    margin-bottom: 20px;
+}
+
+.sub-chart-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 10px 0px;
+    background: rgb(255, 144, 0);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.report-con {
+    padding: 0;
+}
+
+table {
+    width: 100%;
+}
+
+.stud-table table tr {
+    padding: 3px 2px;
+}
+
+    .stud-table table tr:hover {
+        background: #E9E9E9 none repeat scroll 0% 0%;
+    }
+
+.stud-table table th {
+    background: #007280 none repeat scroll 0% 0%;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 10px 2px;
+    text-align: center;
+}
+
+.stud-table table td {
+    padding: 3px 2px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #EAEAEA;
+}
+
+.info-container {
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.stud-profile-pic img {
+    width: 90px;
+}
+
+.sub-img img {
+    width: 110px;
+}
+
+.sub-img {
+    display: inline-block;
+    float: right;
+}
+
+.title {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    color: #045271;
+    font-weight: bold;
+}
+
+.info {
+    display: inline-block;
+    width: 55%;
+}
+
+.HeadBoyRow {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.senate-con {
+    width: 210px;
+    display: inline-block;
+    box-shadow: 0 0 3px #868585;
+    text-align: center;
+    padding: 10px;
+}
+
+.senate-vote a {
+    background: #F90;
+    border: 1px solid #9F6104;
+    padding: 3px 10px;
+    color: #0B0909;
+}
+
+    .senate-vote a:hover {
+        background: #FFF none repeat scroll 0% 0%;
+        color: #E46E0A;
+    }
+
+.senate-name {
+    color: #C65502;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.senate-about {
+    cursor: pointer;
+    color: #1474A8;
+    margin: 5px 0;
+}
+
+.jsgrid-table th {
+    color: #565656;
+}
+
+.jsgrid-table td {
+    color: #514B4B;
+}
+
+.jsgrid-table {
+    width: 100% !important;
+}
+
+.skin-blue .main-header .navbar {
+    background-color: #007280;
+}
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 0 0 5px;
+}
+
+.skin-blue .wrapper {
+    box-shadow: none;
+}
+
+.skin-blue .sidebar-menu > li > a:hover, .skin-blue .sidebar-menu > li.active > a {
+    color: #FFF;
+    background: #007280 none repeat scroll 0% 0%;
+    border-left-color: #000;
+}
+
+.skin-blue .sidebar-menu > li.header {
+    color: #FFF;
+    background: #FF9000 none repeat scroll 0% 0%;
+}
+
+.user-panel {
+    padding: 10px;
+    text-align: center;
+}
+
+.skin-blue .sidebar a {
+    color: #013853;
+}
+
+.skin-blue .sidebar-menu > li > a {
+    margin-right: 0;
+}
+
+.sidebar-menu > li.treeview {
+    margin-top: 10px;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background: #083854 none repeat scroll 0% 0%;
+}
+
+.skin-blue .user-panel > .info, .skin-blue .user-panel > .info > a {
+    color: #043153;
+}
+
+.skin-blue .sidebar-menu > li > .treeview-menu {
+    margin: 0px;
+    padding: 0;
+    background: #022D3E none repeat scroll 0% 0%;
+}
+
+.skin-blue .treeview-menu > li > a {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.sidebar-menu .treeview-menu > li > a > .fa {
+    display: none;
+}
+
+.skin-blue .treeview-menu > li.active > a, .skin-blue .treeview-menu > li > a:hover {
+    color: #000;
+    background: #fff;
+}
+
+.skin-blue .main-header .navbar .nav > li > a {
+    color: #FFF;
+    padding: 28px 10px;
+}
+
+    .skin-blue .main-header .navbar .nav > li > a:hover,
+    .skin-blue .main-header .navbar .nav > li > a:active,
+    .skin-blue .main-header .navbar .nav > li > a:focus,
+    .skin-blue .main-header .navbar .nav .open > a,
+    .skin-blue .main-header .navbar .nav .open > a:hover,
+    .skin-blue .main-header .navbar .nav .open > a:focus {
+        background: #083854 none repeat scroll 0% 0%;
+    }
+
+.prefect-div h5 {
+    color: #FF6300;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-custom-menu > .navbar-nav > li {
+    position: relative;
+    width: 187px;
+}
+
+.skin-blue .main-header .navbar .navbar-custom-menu > .nav {
+    margin-right: 0px;
+    width: 187px;
+}
+
+.main-header .navbar-custom-menu {
+    margin-right: 0;
+    float: right;
+}
+
+.CenterTableHN {
+    width: 240px;
+    align-content: center;
+    margin: 0px 50% 0px 40%;
+}
+
+@media all and (max-width:780px) {
+    .sidebar-menu a span {
+        font-size: 10px;
+    }
+
+    .sidebar-menu > li > a {
+        padding: 5px 5px 5px 15px;
+        display: block;
+    }
+}
+
+/*JS Grid Related classes*/
+/*To make column hidden*/
+.HideField {
+    display: none;
+}
+/*To Make column mendetory*/
+.Mandatory:after {
+    content: url(../dist/img/mandatory16x16.svg);
+}

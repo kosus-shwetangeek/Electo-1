@@ -1,0 +1,8 @@
+K:\DotNet\ElectoSVC\Code\ElectoSystem-4-10-15\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.dll
+K:\DotNet\ElectoSVC\Code\ElectoSystem-4-10-15\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.pdb
+K:\DotNet\ElectoSVC\Code\ElectoSystem-4-10-15\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.dll
+K:\DotNet\ElectoSVC\Code\ElectoSystem-4-10-15\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.pdb
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.pdb
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.pdb

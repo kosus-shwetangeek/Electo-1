@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{340E63A1-C0D9-4789-9FF7-6AA495D86138}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ElectoSystem</RootNamespace>
+    <AssemblyName>ElectoSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL Library\AutoMapper\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Eleco Services\VoatingSystem.Services\Elect.Service\bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Eleco Services\VoatingSystem.Services\Elect.Service\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Eleco Services\VoatingSystem.Services\Elect.Service\bin\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminWelcome.aspx" />
+    <Content Include="Admin\HouseDesignation.aspx" />
+    <Content Include="Admin\HouseElection.aspx" />
+    <Content Include="Admin\HouseMaster.aspx" />
+    <Content Include="Admin\HouseNomination.aspx" />
+    <Content Include="Admin\ManageClassSection.aspx" />
+    <Content Include="Admin\SenateDesignation.aspx" />
+    <Content Include="Admin\SenateElection.aspx" />
+    <Content Include="Admin\SenateNomination.aspx" />
+    <Content Include="Admin\StudentHouseMaster.aspx" />
+    <Content Include="Admin\StudentMaster.aspx" />
+    <Content Include="Authenticate\ForgetPassword.aspx" />
+    <Content Include="Authenticate\Login.aspx" />
+    <Content Include="Authenticate\RegisterCandidate.aspx" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.eot" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.ttf" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.woff" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.woff2" />
+    <Content Include="bootstrap\fonts\FontAwesome.otf" />
+    <Content Include="Common\CommonInc.asp" />
+    <Content Include="dist\css\jquery-ui.css" />
+    <Content Include="dist\css\jquery.datetimepicker.css" />
+    <Content Include="dist\css\jquery.loader.min.css" />
+    <Content Include="dist\css\toastr.css" />
+    <Content Include="dist\css\toastr.min.css" />
+    <Content Include="dist\img\ajax-loader.gif" />
+    <Content Include="dist\img\bg1.jpg" />
+    <Content Include="dist\img\calender.png" />
+    <Content Include="dist\img\Electo_Logo-1.png" />
+    <Content Include="dist\img\mandatory.ico" />
+    <Content Include="dist\img\mandatory.svg" />
+    <Content Include="dist\img\mandatory16x16.svg">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="dist\img\reset-pass.jpg" />
+    <Content Include="dist\img\SubmitVote.gif" />
+    <Content Include="dist\img\cal.ico" />
+    <Content Include="dist\js\Graphs\d3.min.js" />
+    <Content Include="dist\js\Graphs\d3pie.min.js" />
+    <Content Include="dist\js\jquery-2.1.4.js" />
+    <Content Include="dist\js\jquery-2.1.4.min.js" />
+    <Content Include="dist\js\jquery.datetimepicker.min.js" />
+    <Content Include="dist\js\jquery.loader.min.js" />
+    <Content Include="dist\js\toastr.min.js" />
+    <Content Include="Admin\Staff.Master" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <EntityDeploy Include="Dropdown.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Dropdown.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Dropdown.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Dropdown.edmx</DependentUpon>
+      <LastGenOutput>Dropdown.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Dropdown.edmx.diagram">
+      <DependentUpon>Dropdown.edmx</DependentUpon>
+    </Content>
+    <Content Include="Dropdown.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Dropdown.edmx</DependentUpon>
+      <LastGenOutput>Dropdown.cs</LastGenOutput>
+    </Content>
+    <Content Include="Reports\HouseReports.aspx" />
+    <Content Include="Reports\SenateReport.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="Voting\HouseElection.aspx" />
+    <Content Include="Voting\NomineeDetails.aspx" />
+    <Content Include="Voting\SenateElection.aspx" />
+    <Content Include="Voting\Voating.Master" />
+    <Content Include="Dashboard.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Dashboard.Context1.cs</LastGenOutput>
+    </Content>
+    <EntityDeploy Include="Dashboard.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Dashboard1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Dashboard.edmx.diagram">
+      <DependentUpon>Dashboard.edmx</DependentUpon>
+    </Content>
+    <Content Include="Dashboard.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Dashboard1.cs</LastGenOutput>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\font-awesome-min.css" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.svg" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\npm.js" />
+    <Content Include="dist\css\AdminLTE.css" />
+    <Content Include="dist\css\AdminLTE.min.css" />
+    <Content Include="dist\css\icons-2x.png" />
+    <Content Include="dist\css\icons.png" />
+    <Content Include="dist\css\jsgrid-theme.min.css" />
+    <Content Include="dist\css\JSGrid.css" />
+    <Content Include="dist\css\jsgrid.min.css" />
+    <Content Include="dist\css\JSGridDemo.css" />
+    <Content Include="dist\css\skins\skin-black.css" />
+    <Content Include="dist\css\skins\skin-black.min.css" />
+    <Content Include="dist\css\skins\skin-blue.css" />
+    <Content Include="dist\css\skins\skin-blue.min.css" />
+    <Content Include="dist\css\skins\skin-green.css" />
+    <Content Include="dist\css\skins\skin-green.min.css" />
+    <Content Include="dist\css\skins\skin-purple.css" />
+    <Content Include="dist\css\skins\skin-purple.min.css" />
+    <Content Include="dist\css\skins\skin-red.css" />
+    <Content Include="dist\css\skins\skin-red.min.css" />
+    <Content Include="dist\css\skins\skin-yellow.css" />
+    <Content Include="dist\css\skins\skin-yellow.min.css" />
+    <Content Include="dist\css\skins\_all-skins.css" />
+    <Content Include="dist\css\skins\_all-skins.min.css" />
+    <Content Include="dist\css\style.css" />
+    <Content Include="dist\css\theme.css" />
+    <Content Include="dist\css\TinyBox.css" />
+    <Content Include="dist\img\7AF2Qzt.png" />
+    <Content Include="dist\img\8bcLQqF.png" />
+    <Content Include="dist\img\boy.png" />
+    <Content Include="dist\img\close.png" />
+    <Content Include="dist\img\dT7eM7rac.png" />
+    <Content Include="dist\img\Hd.Boy-Archit Kulkarni%28IX%29.jpg" />
+    <Content Include="dist\img\Hd.Boy-Atharva Pansar%28IX%29.jpg" />
+    <Content Include="dist\img\Hd.Boy-Pranal Pawar%28IX%29.jpg" />
+    <Content Include="dist\img\Hd.Girl-AnupritaKulkarni%28IX%29.jpg" />
+    <Content Include="dist\img\Hd.Girl-ManasiTamgole %28IX%29.jpg" />
+    <Content Include="dist\img\Hd.Girl-SaloniShetye%28IX%29.jpg" />
+    <Content Include="dist\img\Hd.Girl-VaishnaviDesai%28IX%29.jpg" />
+    <Content Include="dist\img\icons-2x.png" />
+    <Content Include="dist\img\icons.png" />
+    <Content Include="dist\img\Jr.Prf - AGNI - Archita Naik %28V%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - AGNI - Parth Jedhe %28IV%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - AGNI - Rucha Gadgil %28IV%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - AGNI - Vaishnav Pawar %28IV%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - PRITHVI - Astha Bhayani %28V%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - PRITHVI - Sanika Chaudhary %28IV%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - PRITHVI - V. Aniruddha %28V%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - SURYA - Dishita Marathe %28V%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - SURYA - Tejas Nakhate %28V%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - VARUN - Apoorva Landge %28IV%29.jpg" />
+    <Content Include="dist\img\Jr.Prf - VARUN - Apoorva Padwal %28V%29.jpg" />
+    <Content Include="dist\img\logo.png" />
+    <Content Include="dist\img\Pref PRITHVI- Durva Ghate %28IX%29.png" />
+    <Content Include="dist\img\Pref SURYA- Swamini Shirsath %28IX%29.png" />
+    <Content Include="dist\img\Pref SURYA- Yashraj Ranawade %28VII%29.png" />
+    <Content Include="dist\img\Pref VARUN- Anusha Bhanap %28VIII%29.png" />
+    <Content Include="dist\img\Pref VARUN- Pratham Kshirsagar %28VII%29.png" />
+    <Content Include="dist\img\Pref VARUN- Sumer Raravikar %28VIII%29.png" />
+    <Content Include="dist\img\preload.gif" />
+    <Content Include="dist\img\Prf - AGNI - Harsh Mohite %28VIII%29.jpg" />
+    <Content Include="dist\img\Prf - AGNI - Prutha Chinchore %28VIII%29.jpg" />
+    <Content Include="dist\img\Prf - PRITHVI - Anish Aundhkar %28VIII%29.jpg" />
+    <Content Include="dist\img\Prf - SURYA - Dheeral Bhayani %28VIII%29.jpg" />
+    <Content Include="dist\img\Prf - VARUN - Reva Gadgil %28VII%29.jpg" />
+    <Content Include="dist\img\user2-160x160.jpg" />
+    <Content Include="dist\img\Vc. Pref AGNI - Ashish Tiwade %28VII%29.png" />
+    <Content Include="dist\img\Vc. Pref AGNI - Gayatri Walture %28VI%29.png" />
+    <Content Include="dist\img\Vc. Pref PRITHVI - Madhura Kapshikar %28VII%29.png" />
+    <Content Include="dist\img\Vc. Pref PRITHVI- Vishesh Bhandare %28VI%29.png" />
+    <Content Include="dist\img\Vc. Pref SURYA - Apoorv Thite %28VI%29.png" />
+    <Content Include="dist\img\Vc. Pref SURYA - Shweta Mahajan %28VII%29.png" />
+    <Content Include="dist\img\Vc. Pref SURYA- Anurag Bhosale %28VII%29.png" />
+    <Content Include="dist\img\Vc. Pref VARUN - Parth Deshmukh %28VII%29.png" />
+    <Content Include="dist\img\Vc. Pref VARUN - Pranav Raskar %28VI%29.png" />
+    <Content Include="dist\img\Vc.GmsCap - Pratham Harpude %28VIII%29.jpg" />
+    <Content Include="dist\img\Vc.GmsCap - Prithvi Jadhav %28VIII%29.jpg" />
+    <Content Include="dist\img\Vc.GmsCap - Saniya Pendhari %28VIII%29.jpg" />
+    <Content Include="dist\img\Vc.GmsCap - Sneha Shetty %28VIII%29.jpg" />
+    <Content Include="dist\img\Vc.Prf - AGNI - Astha Baviskar %28VI%29.jpg" />
+    <Content Include="dist\img\Vc.Prf - PRITHVI - Sara Powar %28VI%29.jpg" />
+    <Content Include="dist\img\Vc.Prf - PRITHVI - Shruti Kodre %28VI%29.jpg" />
+    <Content Include="dist\img\Vc.Prf - SURYA - Vaibhava Waghmode %28VII%29.jpg" />
+    <Content Include="dist\img\Vc.Prf - VARUN- Anuja Bhadane %28VI%29.jpg" />
+    <Content Include="dist\img\Vc.Prf - VARUN- Diya Shetty %28VI%29.jpg" />
+    <Content Include="dist\js\app.js" />
+    <Content Include="dist\js\app.min.js" />
+    <Content Include="dist\js\canvasjs.min.js" />
+    <Content Include="dist\js\Chart.min.js" />
+    <Content Include="dist\js\demo.js" />
+    <Content Include="dist\js\googleapi.js" />
+    <Content Include="dist\js\jquery-1.11.3.js" />
+    <Content Include="dist\js\jquery-1.8.3.js" />
+    <Content Include="dist\js\jquery-ui.min.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.core.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.field.checkbox.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.field.control.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.field.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.field.number.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.field.select.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.field.text.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.field.textarea.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.load-indicator.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.load-strategies.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.min.js" />
+    <Content Include="dist\js\JSGrid\jsgrid.sort-strategies.js" />
+    <Content Include="dist\js\pages\dashboard.js" />
+    <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="dist\js\tinybox.js" />
+    <Content Include="plugins\iCheck\all.css" />
+    <Content Include="plugins\iCheck\icheck.js" />
+    <Content Include="plugins\iCheck\icheck.min.js" />
+    <Content Include="plugins\iCheck\square\aero%402x.png" />
+    <Content Include="plugins\iCheck\square\aero.css" />
+    <Content Include="plugins\iCheck\square\aero.png" />
+    <Content Include="plugins\iCheck\square\blue%402x.png" />
+    <Content Include="plugins\iCheck\square\blue.css" />
+    <Content Include="plugins\iCheck\square\blue.png" />
+    <Content Include="plugins\iCheck\square\green%402x.png" />
+    <Content Include="plugins\iCheck\square\green.css" />
+    <Content Include="plugins\iCheck\square\green.png" />
+    <Content Include="plugins\iCheck\square\grey%402x.png" />
+    <Content Include="plugins\iCheck\square\grey.css" />
+    <Content Include="plugins\iCheck\square\grey.png" />
+    <Content Include="plugins\iCheck\square\orange%402x.png" />
+    <Content Include="plugins\iCheck\square\orange.css" />
+    <Content Include="plugins\iCheck\square\orange.png" />
+    <Content Include="plugins\iCheck\square\pink%402x.png" />
+    <Content Include="plugins\iCheck\square\pink.css" />
+    <Content Include="plugins\iCheck\square\pink.png" />
+    <Content Include="plugins\iCheck\square\purple%402x.png" />
+    <Content Include="plugins\iCheck\square\purple.css" />
+    <Content Include="plugins\iCheck\square\purple.png" />
+    <Content Include="plugins\iCheck\square\red%402x.png" />
+    <Content Include="plugins\iCheck\square\red.css" />
+    <Content Include="plugins\iCheck\square\red.png" />
+    <Content Include="plugins\iCheck\square\square%402x.png" />
+    <Content Include="plugins\iCheck\square\square.css" />
+    <Content Include="plugins\iCheck\square\square.png" />
+    <Content Include="plugins\iCheck\square\yellow%402x.png" />
+    <Content Include="plugins\iCheck\square\yellow.css" />
+    <Content Include="plugins\iCheck\square\yellow.png" />
+    <Content Include="plugins\iCheck\square\_all.css" />
+    <Content Include="plugins\jQuery\jQuery-2.1.3.min.js" />
+    <Content Include="plugins\morris\morris.css" />
+    <Content Include="plugins\morris\morris.js" />
+    <Content Include="plugins\morris\morris.min.js" />
+    <Content Include="plugins\slimScroll\jquery.slimscroll.js" />
+    <Content Include="plugins\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="UserControl\UCSenateElection.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminWelcome.aspx.cs">
+      <DependentUpon>AdminWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminWelcome.aspx.designer.cs">
+      <DependentUpon>AdminWelcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HouseDesignation.aspx.cs">
+      <DependentUpon>HouseDesignation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HouseDesignation.aspx.designer.cs">
+      <DependentUpon>HouseDesignation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HouseElection.aspx.cs">
+      <DependentUpon>HouseElection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HouseElection.aspx.designer.cs">
+      <DependentUpon>HouseElection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HouseMaster.aspx.cs">
+      <DependentUpon>HouseMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HouseMaster.aspx.designer.cs">
+      <DependentUpon>HouseMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HouseNomination.aspx.cs">
+      <DependentUpon>HouseNomination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HouseNomination.aspx.designer.cs">
+      <DependentUpon>HouseNomination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageClassSection.aspx.cs">
+      <DependentUpon>ManageClassSection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageClassSection.aspx.designer.cs">
+      <DependentUpon>ManageClassSection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SenateDesignation.aspx.cs">
+      <DependentUpon>SenateDesignation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SenateDesignation.aspx.designer.cs">
+      <DependentUpon>SenateDesignation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SenateElection.aspx.cs">
+      <DependentUpon>SenateElection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SenateElection.aspx.designer.cs">
+      <DependentUpon>SenateElection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SenateNomination.aspx.cs">
+      <DependentUpon>SenateNomination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SenateNomination.aspx.designer.cs">
+      <DependentUpon>SenateNomination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Staff.Master.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Staff.Master.designer.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentHouseMaster.aspx.cs">
+      <DependentUpon>StudentHouseMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentHouseMaster.aspx.designer.cs">
+      <DependentUpon>StudentHouseMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentMaster.aspx.cs">
+      <DependentUpon>StudentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentMaster.aspx.designer.cs">
+      <DependentUpon>StudentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authenticate\ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authenticate\ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authenticate\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authenticate\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authenticate\RegisterCandidate.aspx.cs">
+      <DependentUpon>RegisterCandidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authenticate\RegisterCandidate.aspx.designer.cs">
+      <DependentUpon>RegisterCandidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DropDownCommon.cs" />
+    <Compile Include="Common\PieChartData.cs" />
+    <Compile Include="Common\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UICommon.cs" />
+    <Compile Include="Common\UIConstants.cs" />
+    <Compile Include="Dashboard.Context.cs" />
+    <Compile Include="Dashboard.cs" />
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dropdown.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dropdown.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dropdown.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dropdown.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dropdown.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dropdown.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClassSectionEntity.cs" />
+    <Compile Include="Entities\Designation.cs" />
+    <Compile Include="Entities\ElectionsEntity.cs" />
+    <Compile Include="Entities\NomineesEntity.cs" />
+    <Compile Include="Entities\StudentEntity.cs" />
+    <Compile Include="Entities\VotetedStudentsEntity.cs" />
+    <Compile Include="Helper\DashboardHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\HouseReports.aspx.cs">
+      <DependentUpon>HouseReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HouseReports.aspx.designer.cs">
+      <DependentUpon>HouseReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SenateReport.aspx.cs">
+      <DependentUpon>SenateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SenateReport.aspx.designer.cs">
+      <DependentUpon>SenateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\UIHelper.cs" />
+    <Compile Include="tacademicyear.cs">
+      <DependentUpon>Dropdown.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclass.cs">
+      <DependentUpon>Dropdown.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tclasssection.cs">
+      <DependentUpon>Dropdown.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thous.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="thousedesignation.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="thouseelection.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="thousenomination.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tsection.cs">
+      <DependentUpon>Dropdown.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tsenatedesignation.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tsenateelection.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tsenatenomination.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tstudent.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvotedstudent.cs">
+      <DependentUpon>Dashboard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCSenateElection.ascx.cs">
+      <DependentUpon>UCSenateElection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCSenateElection.ascx.designer.cs">
+      <DependentUpon>UCSenateElection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting\HouseElection.aspx.cs">
+      <DependentUpon>HouseElection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting\HouseElection.aspx.designer.cs">
+      <DependentUpon>HouseElection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting\NomineeDetails.aspx.cs">
+      <DependentUpon>NomineeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting\NomineeDetails.aspx.designer.cs">
+      <DependentUpon>NomineeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting\SenateElection.aspx.cs">
+      <DependentUpon>SenateElection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting\SenateElection.aspx.designer.cs">
+      <DependentUpon>SenateElection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting\Voating.Master.cs">
+      <DependentUpon>Voating.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting\Voating.Master.designer.cs">
+      <DependentUpon>Voating.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Electo.BusinessLayer\Electo.BusinessLayer.csproj">
+      <Project>{40781b76-8823-4a18-ab9c-6a1cefaa6e4a}</Project>
+      <Name>Electo.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Electo.Constants\Electo.Constants.csproj">
+      <Project>{b5a6e3f0-fdc3-4283-8a2b-2eadeda2a3b8}</Project>
+      <Name>Electo.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Electo.DataLayer\Electo.DataLayer.csproj">
+      <Project>{89959a24-ba7a-4cc8-8be0-dd168f5b7ca3}</Project>
+      <Name>Electo.DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1240</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1241/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

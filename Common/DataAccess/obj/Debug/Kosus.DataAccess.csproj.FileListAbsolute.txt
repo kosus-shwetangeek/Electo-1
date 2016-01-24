@@ -1,0 +1,5 @@
+D:\DotNet\SVN\Code\Common\DataAccess\bin\Debug\Kosus.DataAccess.dll
+D:\DotNet\SVN\Code\Common\DataAccess\bin\Debug\Kosus.DataAccess.pdb
+D:\DotNet\SVN\Code\Common\DataAccess\obj\Debug\Kosus.DataAccess.dll
+D:\DotNet\SVN\Code\Common\DataAccess\obj\Debug\Kosus.DataAccess.pdb
+D:\DotNet\SVN\Code\Common\DataAccess\obj\Debug\Kosus.DataAccess.csprojResolveAssemblyReference.cache

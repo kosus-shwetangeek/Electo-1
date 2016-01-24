@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="votinglivedbModelStoreContainer" CdmEntityContainer="votinglivedbEntities">
+    <EntitySetMapping Name="tacademicyears">
+      <EntityTypeMapping TypeName="votinglivedbModel.tacademicyear">
+        <MappingFragment StoreEntitySet="tacademicyear">
+          <ScalarProperty Name="Acy_Id" ColumnName="Acy_Id" />
+          <ScalarProperty Name="Acy_AcademicYear" ColumnName="Acy_AcademicYear" />
+          <ScalarProperty Name="Acy_StartDate" ColumnName="Acy_StartDate" />
+          <ScalarProperty Name="Acy_EndDate" ColumnName="Acy_EndDate" />
+          <ScalarProperty Name="Acy_IsActive" ColumnName="Acy_IsActive" />
+          <ScalarProperty Name="Acy_IsDeleted" ColumnName="Acy_IsDeleted" />
+          <ScalarProperty Name="Acy_DeletedDate" ColumnName="Acy_DeletedDate" />
+          <ScalarProperty Name="Acy_DeletedBy" ColumnName="Acy_DeletedBy" />
+          <ScalarProperty Name="Acy_LastUpdatedDate" ColumnName="Acy_LastUpdatedDate" />
+          <ScalarProperty Name="Acy_LastUpdatedBy" ColumnName="Acy_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tclasses">
+      <EntityTypeMapping TypeName="votinglivedbModel.tclass">
+        <MappingFragment StoreEntitySet="tclass">
+          <ScalarProperty Name="Cls_Id" ColumnName="Cls_Id" />
+          <ScalarProperty Name="Cls_Name" ColumnName="Cls_Name" />
+          <ScalarProperty Name="Cls_DisplayName" ColumnName="Cls_DisplayName" />
+          <ScalarProperty Name="Cls_IsDeleted" ColumnName="Cls_IsDeleted" />
+          <ScalarProperty Name="Cls_DeletedDate" ColumnName="Cls_DeletedDate" />
+          <ScalarProperty Name="Cls_DeletedBy" ColumnName="Cls_DeletedBy" />
+          <ScalarProperty Name="Cls_LastUpdatedDate" ColumnName="Cls_LastUpdatedDate" />
+          <ScalarProperty Name="Cls_LastUpdatedBy" ColumnName="Cls_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tclasssections">
+      <EntityTypeMapping TypeName="votinglivedbModel.tclasssection">
+        <MappingFragment StoreEntitySet="tclasssection">
+          <ScalarProperty Name="Csc_Id" ColumnName="Csc_Id" />
+          <ScalarProperty Name="Csc_ClassId" ColumnName="Csc_ClassId" />
+          <ScalarProperty Name="Csc_SectionId" ColumnName="Csc_SectionId" />
+          <ScalarProperty Name="Csc_DisplayName" ColumnName="Csc_DisplayName" />
+          <ScalarProperty Name="Csc_IsDeleted" ColumnName="Csc_IsDeleted" />
+          <ScalarProperty Name="Csc_DeletedDate" ColumnName="Csc_DeletedDate" />
+          <ScalarProperty Name="Csc_DeletedBy" ColumnName="Csc_DeletedBy" />
+          <ScalarProperty Name="Csc_LastUpdatedDate" ColumnName="Csc_LastUpdatedDate" />
+          <ScalarProperty Name="Csc_LastUpdatedBy" ColumnName="Csc_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thouses">
+      <EntityTypeMapping TypeName="votinglivedbModel.thous">
+        <MappingFragment StoreEntitySet="thouses">
+          <ScalarProperty Name="Hus_Id" ColumnName="Hus_Id" />
+          <ScalarProperty Name="Hus_Name" ColumnName="Hus_Name" />
+          <ScalarProperty Name="Hus_Description" ColumnName="Hus_Description" />
+          <ScalarProperty Name="Hus_HouseCode" ColumnName="Hus_HouseCode" />
+          <ScalarProperty Name="Hus_IsDeleted" ColumnName="Hus_IsDeleted" />
+          <ScalarProperty Name="Hus_DeletedDate" ColumnName="Hus_DeletedDate" />
+          <ScalarProperty Name="Hus_DeletedBy" ColumnName="Hus_DeletedBy" />
+          <ScalarProperty Name="Hus_LastUpdatedDate" ColumnName="Hus_LastUpdatedDate" />
+          <ScalarProperty Name="Hus_LastUpdatedBy" ColumnName="Hus_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tsections">
+      <EntityTypeMapping TypeName="votinglivedbModel.tsection">
+        <MappingFragment StoreEntitySet="tsection">
+          <ScalarProperty Name="Sec_Id" ColumnName="Sec_Id" />
+          <ScalarProperty Name="Sec_Name" ColumnName="Sec_Name" />
+          <ScalarProperty Name="Sec_DisplayName" ColumnName="Sec_DisplayName" />
+          <ScalarProperty Name="Sec_IsDeleted" ColumnName="Sec_IsDeleted" />
+          <ScalarProperty Name="Sec_DeletedDate" ColumnName="Sec_DeletedDate" />
+          <ScalarProperty Name="Sec_DeletedBy" ColumnName="Sec_DeletedBy" />
+          <ScalarProperty Name="Sec_LastUpdatedDate" ColumnName="Sec_LastUpdatedDate" />
+          <ScalarProperty Name="Sec_LastUpdatedBy" ColumnName="Sec_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thousedesignations">
+      <EntityTypeMapping TypeName="votinglivedbModel.thousedesignation">
+        <MappingFragment StoreEntitySet="thousedesignation">
+          <ScalarProperty Name="Hsd_LastUpdatedBy" ColumnName="Hsd_LastUpdatedBy" />
+          <ScalarProperty Name="Hsd_LastUpdatedDate" ColumnName="Hsd_LastUpdatedDate" />
+          <ScalarProperty Name="Hsd_DeletedBy" ColumnName="Hsd_DeletedBy" />
+          <ScalarProperty Name="Hsd_DeletedDate" ColumnName="Hsd_DeletedDate" />
+          <ScalarProperty Name="Hsd_IsDeleted" ColumnName="Hsd_IsDeleted" />
+          <ScalarProperty Name="Hsd_Gender" ColumnName="Hsd_Gender" />
+          <ScalarProperty Name="Hsd_DesCode" ColumnName="Hsd_DesCode" />
+          <ScalarProperty Name="Hsd_Description" ColumnName="Hsd_Description" />
+          <ScalarProperty Name="Hsd_Name" ColumnName="Hsd_Name" />
+          <ScalarProperty Name="Hsd_HouseId" ColumnName="Hsd_HouseId" />
+          <ScalarProperty Name="Hsd_Id" ColumnName="Hsd_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tsenatedesignations">
+      <EntityTypeMapping TypeName="votinglivedbModel.tsenatedesignation">
+        <MappingFragment StoreEntitySet="tsenatedesignation">
+          <ScalarProperty Name="Sen_LastUpdatedBy" ColumnName="Sen_LastUpdatedBy" />
+          <ScalarProperty Name="Sen_LastUpdatedDate" ColumnName="Sen_LastUpdatedDate" />
+          <ScalarProperty Name="Sen_DeletedBy" ColumnName="Sen_DeletedBy" />
+          <ScalarProperty Name="Sen_DeletedDate" ColumnName="Sen_DeletedDate" />
+          <ScalarProperty Name="Sen_IsDeleted" ColumnName="Sen_IsDeleted" />
+          <ScalarProperty Name="Sen_Gender" ColumnName="Sen_Gender" />
+          <ScalarProperty Name="Sen_DesCode" ColumnName="Sen_DesCode" />
+          <ScalarProperty Name="Sen_Description" ColumnName="Sen_Description" />
+          <ScalarProperty Name="Sen_Name" ColumnName="Sen_Name" />
+          <ScalarProperty Name="Sen_Id" ColumnName="Sen_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thouseelections">
+      <EntityTypeMapping TypeName="votinglivedbModel.thouseelection">
+        <MappingFragment StoreEntitySet="thouseelection">
+          <ScalarProperty Name="Hel_Description" ColumnName="Hel_Description" />
+          <ScalarProperty Name="Hel_EndDate" ColumnName="Hel_EndDate" />
+          <ScalarProperty Name="Hel_StartDate" ColumnName="Hel_StartDate" />
+          <ScalarProperty Name="Hel_ElectionId" ColumnName="Hel_ElectionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tsenateelections">
+      <EntityTypeMapping TypeName="votinglivedbModel.tsenateelection">
+        <MappingFragment StoreEntitySet="tsenateelection">
+          <ScalarProperty Name="Sel_Description" ColumnName="Sel_Description" />
+          <ScalarProperty Name="Sel_EndDate" ColumnName="Sel_EndDate" />
+          <ScalarProperty Name="Sel_StartDate" ColumnName="Sel_StartDate" />
+          <ScalarProperty Name="Sel_ElectionId" ColumnName="Sel_ElectionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

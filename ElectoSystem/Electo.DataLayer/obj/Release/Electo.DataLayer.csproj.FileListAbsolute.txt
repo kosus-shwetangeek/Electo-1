@@ -1,0 +1,9 @@
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\bin\Release\Electo.DataLayer.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\bin\Release\Electo.DataLayer.pdb
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\bin\Release\Electo.Constants.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\bin\Release\Kosus.DataAccess.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\bin\Release\Electo.Constants.pdb
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\bin\Release\Kosus.DataAccess.pdb
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\obj\Release\Electo.DataLayer.csprojResolveAssemblyReference.cache
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\obj\Release\Electo.DataLayer.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.DataLayer\obj\Release\Electo.DataLayer.pdb

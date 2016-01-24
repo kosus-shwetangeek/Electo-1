@@ -1,0 +1,815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DashboardEF.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="thousedesignation">
+          <Key>
+            <PropertyRef Name="Hsd_Id" />
+          </Key>
+          <Property Name="Hsd_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hsd_HouseId" Type="int" />
+          <Property Name="Hsd_Name" Type="varchar" MaxLength="30" />
+          <Property Name="Hsd_Description" Type="varchar" MaxLength="200" />
+          <Property Name="Hsd_DesCode" Type="varchar" MaxLength="5" />
+          <Property Name="Hsd_Gender" Type="int" />
+          <Property Name="Hsd_IsDeleted" Type="bool" />
+          <Property Name="Hsd_DeletedDate" Type="datetime" Precision="6" />
+          <Property Name="Hsd_DeletedBy" Type="int" />
+          <Property Name="Hsd_LastUpdatedDate" Type="datetime" Precision="6" />
+          <Property Name="Hsd_LastUpdatedBy" Type="int" />
+        </EntityType>
+        <EntityType Name="thouseelection">
+          <Key>
+            <PropertyRef Name="Hel_ElectionId" />
+          </Key>
+          <Property Name="Hel_ElectionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hel_StartDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="Hel_EndDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="Hel_Description" Type="longtext" />
+        </EntityType>
+        <EntityType Name="thousenomination">
+          <Key>
+            <PropertyRef Name="Hsn_Id" />
+          </Key>
+          <Property Name="Hsn_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hsn_HouseId" Type="int" />
+          <Property Name="Hsn_HouseDesignationId" Type="int" />
+          <Property Name="Hsn_ClassSectionId" Type="int" />
+          <Property Name="Hsn_studKey" Type="varchar" MaxLength="12" />
+          <Property Name="Hsn_VoteCount" Type="int" />
+          <Property Name="Hsn_Photo" Type="longtext" />
+          <Property Name="Hsn_AboutNominee" Type="longtext" />
+          <Property Name="Hsn_IsDeleted" Type="bool" />
+          <Property Name="Hsn_DeletedDate" Type="datetime" Precision="6" />
+          <Property Name="Hsn_DeletedBy" Type="int" />
+          <Property Name="Hsn_LastUpdatedDate" Type="datetime" Precision="6" />
+          <Property Name="Hsn_LastUpdatedBy" Type="int" />
+          <Property Name="Hsn_HouseElectionId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="thouses">
+          <Key>
+            <PropertyRef Name="Hus_Id" />
+          </Key>
+          <Property Name="Hus_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hus_Name" Type="varchar" MaxLength="30" />
+          <Property Name="Hus_Description" Type="varchar" MaxLength="200" />
+          <Property Name="Hus_HouseCode" Type="varchar" MaxLength="3" />
+          <Property Name="Hus_IsDeleted" Type="bool" />
+          <Property Name="Hus_DeletedDate" Type="datetime" Precision="6" />
+          <Property Name="Hus_DeletedBy" Type="int" />
+          <Property Name="Hus_LastUpdatedDate" Type="datetime" Precision="6" />
+          <Property Name="Hus_LastUpdatedBy" Type="int" />
+        </EntityType>
+        <EntityType Name="tsenatedesignation">
+          <Key>
+            <PropertyRef Name="Sen_Id" />
+          </Key>
+          <Property Name="Sen_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Sen_Name" Type="varchar" MaxLength="30" />
+          <Property Name="Sen_Description" Type="varchar" MaxLength="200" />
+          <Property Name="Sen_DesCode" Type="varchar" MaxLength="5" />
+          <Property Name="Sen_Gender" Type="int" />
+          <Property Name="Sen_IsDeleted" Type="bool" />
+          <Property Name="Sen_DeletedDate" Type="datetime" Precision="6" />
+          <Property Name="Sen_DeletedBy" Type="int" />
+          <Property Name="Sen_LastUpdatedDate" Type="datetime" Precision="6" />
+          <Property Name="Sen_LastUpdatedBy" Type="int" />
+        </EntityType>
+        <EntityType Name="tsenateelection">
+          <Key>
+            <PropertyRef Name="Sel_ElectionId" />
+          </Key>
+          <Property Name="Sel_ElectionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Sel_StartDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="Sel_EndDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="Sel_Description" Type="longtext" />
+        </EntityType>
+        <EntityType Name="tsenatenomination">
+          <Key>
+            <PropertyRef Name="Snn_Id" />
+          </Key>
+          <Property Name="Snn_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Snn_SenateDesignationId" Type="int" />
+          <Property Name="Snn_ClassSectionId" Type="int" />
+          <Property Name="Snn_studKey" Type="varchar" MaxLength="12" />
+          <Property Name="Snn_VoteCount" Type="int" />
+          <Property Name="Snn_Photo" Type="longtext" />
+          <Property Name="Snn_AboutNominee" Type="longtext" />
+          <Property Name="Snn_IsDeleted" Type="bool" />
+          <Property Name="Snn_DeletedDate" Type="datetime" Precision="6" />
+          <Property Name="Snn_DeletedBy" Type="int" />
+          <Property Name="Snn_LastUpdatedDate" Type="datetime" Precision="6" />
+          <Property Name="Snn_LastUpdatedBy" Type="int" />
+          <Property Name="Snn_SenateElectionId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tstudent">
+          <Key>
+            <PropertyRef Name="stud_Key" />
+          </Key>
+          <Property Name="stud_Id" Type="int" Nullable="false" />
+          <Property Name="stud_Key" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="stud_FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="stud_MiddleName" Type="varchar" MaxLength="50" />
+          <Property Name="stud_LastName" Type="varchar" MaxLength="50" />
+          <Property Name="stud_DoB" Type="date" />
+          <Property Name="stud_GenderId" Type="int" />
+          <Property Name="stud_ClassSectionId" Type="int" />
+          <Property Name="stud_HouseId" Type="int" />
+          <Property Name="stud_IsActive" Type="bool" />
+          <Property Name="stud_Password" Type="varchar" MaxLength="25" />
+          <Property Name="stud_CreatedDate" Type="timestamp" Precision="0" StoreGeneratedPattern="Identity" />
+          <Property Name="stud_CreatedBy" Type="int" />
+          <Property Name="stud_IsDeleted" Type="bool" />
+          <Property Name="stud_DeletedDate" Type="datetime" Precision="6" />
+          <Property Name="stud_DeletedBy" Type="int" />
+          <Property Name="stud_LastUpdatedDate" Type="datetime" Precision="6" />
+          <Property Name="stud_LastUpdatedBy" Type="int" />
+          <Property Name="stud_Photo" Type="longtext" />
+          <Property Name="tstudentcol" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="tvotedstudent">
+          <Key>
+            <PropertyRef Name="Vst_Id" />
+          </Key>
+          <Property Name="Vst_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Vst_StudentKey" Type="varchar" MaxLength="12" />
+          <Property Name="Vst_IVFHouse" Type="bool" />
+          <Property Name="Vst_IVFSenate" Type="bool" />
+        </EntityType>
+        <Association Name="FK__ElectionId">
+          <End Role="tsenateelection" Type="Self.tsenateelection" Multiplicity="1" />
+          <End Role="tsenatenomination" Type="Self.tsenatenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tsenateelection">
+              <PropertyRef Name="Sel_ElectionId" />
+            </Principal>
+            <Dependent Role="tsenatenomination">
+              <PropertyRef Name="Snn_SenateElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tHouseDes__Hsd_H__2A4B4B5E">
+          <End Role="thouses" Type="Self.thouses" Multiplicity="0..1" />
+          <End Role="thousedesignation" Type="Self.thousedesignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouses">
+              <PropertyRef Name="Hus_Id" />
+            </Principal>
+            <Dependent Role="thousedesignation">
+              <PropertyRef Name="Hsd_HouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tHouseNom__Hsn_H__45F365D3">
+          <End Role="thouses" Type="Self.thouses" Multiplicity="0..1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouses">
+              <PropertyRef Name="Hus_Id" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_HouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tHouseNom__Hsn_H__46E78A0C">
+          <End Role="thousedesignation" Type="Self.thousedesignation" Multiplicity="0..1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thousedesignation">
+              <PropertyRef Name="Hsd_Id" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_HouseDesignationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tHouseNom__Hsn_s__48CFD27E">
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="0..1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tstudent">
+              <PropertyRef Name="stud_Key" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_studKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tSenateNo__Snn_S__3A81B327">
+          <End Role="tsenatedesignation" Type="Self.tsenatedesignation" Multiplicity="0..1" />
+          <End Role="tsenatenomination" Type="Self.tsenatenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tsenatedesignation">
+              <PropertyRef Name="Sen_Id" />
+            </Principal>
+            <Dependent Role="tsenatenomination">
+              <PropertyRef Name="Snn_SenateDesignationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tSenateNo__Snn_s__3C69FB99">
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="0..1" />
+          <End Role="tsenatenomination" Type="Self.tsenatenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tstudent">
+              <PropertyRef Name="stud_Key" />
+            </Principal>
+            <Dependent Role="tsenatenomination">
+              <PropertyRef Name="Snn_studKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tStudent__stud_H__34C8D9D1">
+          <End Role="thouses" Type="Self.thouses" Multiplicity="0..1" />
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouses">
+              <PropertyRef Name="Hus_Id" />
+            </Principal>
+            <Dependent Role="tstudent">
+              <PropertyRef Name="stud_HouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tVotedStu__Vst_S__619B8048">
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="0..1" />
+          <End Role="tvotedstudent" Type="Self.tvotedstudent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tstudent">
+              <PropertyRef Name="stud_Key" />
+            </Principal>
+            <Dependent Role="tvotedstudent">
+              <PropertyRef Name="Vst_StudentKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ElectionId_tHouseNom_Hsn_ElectionId">
+          <End Role="thouseelection" Type="Self.thouseelection" Multiplicity="1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouseelection">
+              <PropertyRef Name="Hel_ElectionId" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_HouseElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DashboardEFStoreContainer">
+          <EntitySet Name="thousedesignation" EntityType="Self.thousedesignation" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="thouseelection" EntityType="Self.thouseelection" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="thousenomination" EntityType="Self.thousenomination" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="thouses" EntityType="Self.thouses" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="tsenatedesignation" EntityType="Self.tsenatedesignation" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="tsenateelection" EntityType="Self.tsenateelection" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="tsenatenomination" EntityType="Self.tsenatenomination" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="tstudent" EntityType="Self.tstudent" Schema="votinglivedb" store:Type="Tables" />
+          <EntitySet Name="tvotedstudent" EntityType="Self.tvotedstudent" Schema="votinglivedb" store:Type="Tables" />
+          <AssociationSet Name="FK__ElectionId" Association="Self.FK__ElectionId">
+            <End Role="tsenateelection" EntitySet="tsenateelection" />
+            <End Role="tsenatenomination" EntitySet="tsenatenomination" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tHouseDes__Hsd_H__2A4B4B5E" Association="Self.FK__tHouseDes__Hsd_H__2A4B4B5E">
+            <End Role="thouses" EntitySet="thouses" />
+            <End Role="thousedesignation" EntitySet="thousedesignation" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tHouseNom__Hsn_H__45F365D3" Association="Self.FK__tHouseNom__Hsn_H__45F365D3">
+            <End Role="thouses" EntitySet="thouses" />
+            <End Role="thousenomination" EntitySet="thousenomination" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tHouseNom__Hsn_H__46E78A0C" Association="Self.FK__tHouseNom__Hsn_H__46E78A0C">
+            <End Role="thousedesignation" EntitySet="thousedesignation" />
+            <End Role="thousenomination" EntitySet="thousenomination" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tHouseNom__Hsn_s__48CFD27E" Association="Self.FK__tHouseNom__Hsn_s__48CFD27E">
+            <End Role="tstudent" EntitySet="tstudent" />
+            <End Role="thousenomination" EntitySet="thousenomination" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tSenateNo__Snn_S__3A81B327" Association="Self.FK__tSenateNo__Snn_S__3A81B327">
+            <End Role="tsenatedesignation" EntitySet="tsenatedesignation" />
+            <End Role="tsenatenomination" EntitySet="tsenatenomination" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tSenateNo__Snn_s__3C69FB99" Association="Self.FK__tSenateNo__Snn_s__3C69FB99">
+            <End Role="tstudent" EntitySet="tstudent" />
+            <End Role="tsenatenomination" EntitySet="tsenatenomination" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tStudent__stud_H__34C8D9D1" Association="Self.FK__tStudent__stud_H__34C8D9D1">
+            <End Role="thouses" EntitySet="thouses" />
+            <End Role="tstudent" EntitySet="tstudent" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tVotedStu__Vst_S__619B8048" Association="Self.FK__tVotedStu__Vst_S__619B8048">
+            <End Role="tstudent" EntitySet="tstudent" />
+            <End Role="tvotedstudent" EntitySet="tvotedstudent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ElectionId_tHouseNom_Hsn_ElectionId" Association="Self.FK_ElectionId_tHouseNom_Hsn_ElectionId">
+            <End Role="thouseelection" EntitySet="thouseelection" />
+            <End Role="thousenomination" EntitySet="thousenomination" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DashboardEF" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="thousedesignation">
+          <Key>
+            <PropertyRef Name="Hsd_Id" />
+          </Key>
+          <Property Name="Hsd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hsd_HouseId" Type="Int32" />
+          <Property Name="Hsd_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Hsd_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Hsd_DesCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Hsd_Gender" Type="Int32" />
+          <Property Name="Hsd_IsDeleted" Type="Boolean" />
+          <Property Name="Hsd_DeletedDate" Type="DateTime" />
+          <Property Name="Hsd_DeletedBy" Type="Int32" />
+          <Property Name="Hsd_LastUpdatedDate" Type="DateTime" />
+          <Property Name="Hsd_LastUpdatedBy" Type="Int32" />
+          <NavigationProperty Name="thous" Relationship="Self.FK__tHouseDes__Hsd_H__2A4B4B5E" FromRole="thousedesignation" ToRole="thouses" />
+          <NavigationProperty Name="thousenominations" Relationship="Self.FK__tHouseNom__Hsn_H__46E78A0C" FromRole="thousedesignation" ToRole="thousenomination" />
+        </EntityType>
+        <EntityType Name="thouseelection">
+          <Key>
+            <PropertyRef Name="Hel_ElectionId" />
+          </Key>
+          <Property Name="Hel_ElectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hel_StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="Hel_EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="Hel_Description" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="thousenominations" Relationship="Self.FK_ElectionId_tHouseNom_Hsn_ElectionId" FromRole="thouseelection" ToRole="thousenomination" />
+        </EntityType>
+        <EntityType Name="thousenomination">
+          <Key>
+            <PropertyRef Name="Hsn_Id" />
+          </Key>
+          <Property Name="Hsn_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hsn_HouseId" Type="Int32" />
+          <Property Name="Hsn_HouseDesignationId" Type="Int32" />
+          <Property Name="Hsn_ClassSectionId" Type="Int32" />
+          <Property Name="Hsn_studKey" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Hsn_VoteCount" Type="Int32" />
+          <Property Name="Hsn_Photo" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="Hsn_AboutNominee" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="Hsn_IsDeleted" Type="Boolean" />
+          <Property Name="Hsn_DeletedDate" Type="DateTime" />
+          <Property Name="Hsn_DeletedBy" Type="Int32" />
+          <Property Name="Hsn_LastUpdatedDate" Type="DateTime" />
+          <Property Name="Hsn_LastUpdatedBy" Type="Int32" />
+          <Property Name="Hsn_HouseElectionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="thousedesignation" Relationship="Self.FK__tHouseNom__Hsn_H__46E78A0C" FromRole="thousenomination" ToRole="thousedesignation" />
+          <NavigationProperty Name="thouseelection" Relationship="Self.FK_ElectionId_tHouseNom_Hsn_ElectionId" FromRole="thousenomination" ToRole="thouseelection" />
+          <NavigationProperty Name="thous" Relationship="Self.FK__tHouseNom__Hsn_H__45F365D3" FromRole="thousenomination" ToRole="thouses" />
+          <NavigationProperty Name="tstudent" Relationship="Self.FK__tHouseNom__Hsn_s__48CFD27E" FromRole="thousenomination" ToRole="tstudent" />
+        </EntityType>
+        <EntityType Name="thous">
+          <Key>
+            <PropertyRef Name="Hus_Id" />
+          </Key>
+          <Property Name="Hus_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hus_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Hus_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Hus_HouseCode" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Hus_IsDeleted" Type="Boolean" />
+          <Property Name="Hus_DeletedDate" Type="DateTime" />
+          <Property Name="Hus_DeletedBy" Type="Int32" />
+          <Property Name="Hus_LastUpdatedDate" Type="DateTime" />
+          <Property Name="Hus_LastUpdatedBy" Type="Int32" />
+          <NavigationProperty Name="thousedesignations" Relationship="Self.FK__tHouseDes__Hsd_H__2A4B4B5E" FromRole="thouses" ToRole="thousedesignation" />
+          <NavigationProperty Name="thousenominations" Relationship="Self.FK__tHouseNom__Hsn_H__45F365D3" FromRole="thouses" ToRole="thousenomination" />
+          <NavigationProperty Name="tstudents" Relationship="Self.FK__tStudent__stud_H__34C8D9D1" FromRole="thouses" ToRole="tstudent" />
+        </EntityType>
+        <EntityType Name="tsenatedesignation">
+          <Key>
+            <PropertyRef Name="Sen_Id" />
+          </Key>
+          <Property Name="Sen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sen_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Sen_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Sen_DesCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Sen_Gender" Type="Int32" />
+          <Property Name="Sen_IsDeleted" Type="Boolean" />
+          <Property Name="Sen_DeletedDate" Type="DateTime" />
+          <Property Name="Sen_DeletedBy" Type="Int32" />
+          <Property Name="Sen_LastUpdatedDate" Type="DateTime" />
+          <Property Name="Sen_LastUpdatedBy" Type="Int32" />
+          <NavigationProperty Name="tsenatenominations" Relationship="Self.FK__tSenateNo__Snn_S__3A81B327" FromRole="tsenatedesignation" ToRole="tsenatenomination" />
+        </EntityType>
+        <EntityType Name="tsenateelection">
+          <Key>
+            <PropertyRef Name="Sel_ElectionId" />
+          </Key>
+          <Property Name="Sel_ElectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sel_StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="Sel_EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="Sel_Description" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tsenatenominations" Relationship="Self.FK__ElectionId" FromRole="tsenateelection" ToRole="tsenatenomination" />
+        </EntityType>
+        <EntityType Name="tsenatenomination">
+          <Key>
+            <PropertyRef Name="Snn_Id" />
+          </Key>
+          <Property Name="Snn_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Snn_SenateDesignationId" Type="Int32" />
+          <Property Name="Snn_ClassSectionId" Type="Int32" />
+          <Property Name="Snn_studKey" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Snn_VoteCount" Type="Int32" />
+          <Property Name="Snn_Photo" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="Snn_AboutNominee" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="Snn_IsDeleted" Type="Boolean" />
+          <Property Name="Snn_DeletedDate" Type="DateTime" />
+          <Property Name="Snn_DeletedBy" Type="Int32" />
+          <Property Name="Snn_LastUpdatedDate" Type="DateTime" />
+          <Property Name="Snn_LastUpdatedBy" Type="Int32" />
+          <Property Name="Snn_SenateElectionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tsenatedesignation" Relationship="Self.FK__tSenateNo__Snn_S__3A81B327" FromRole="tsenatenomination" ToRole="tsenatedesignation" />
+          <NavigationProperty Name="tsenateelection" Relationship="Self.FK__ElectionId" FromRole="tsenatenomination" ToRole="tsenateelection" />
+          <NavigationProperty Name="tstudent" Relationship="Self.FK__tSenateNo__Snn_s__3C69FB99" FromRole="tsenatenomination" ToRole="tstudent" />
+        </EntityType>
+        <EntityType Name="tstudent">
+          <Key>
+            <PropertyRef Name="stud_Key" />
+          </Key>
+          <Property Name="stud_Id" Type="Int32" Nullable="false" />
+          <Property Name="stud_Key" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="stud_FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="stud_MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="stud_LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="stud_DoB" Type="DateTime" />
+          <Property Name="stud_GenderId" Type="Int32" />
+          <Property Name="stud_ClassSectionId" Type="Int32" />
+          <Property Name="stud_HouseId" Type="Int32" />
+          <Property Name="stud_IsActive" Type="Boolean" />
+          <Property Name="stud_Password" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="stud_CreatedDate" Type="DateTime" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="stud_CreatedBy" Type="Int32" />
+          <Property Name="stud_IsDeleted" Type="Boolean" />
+          <Property Name="stud_DeletedDate" Type="DateTime" />
+          <Property Name="stud_DeletedBy" Type="Int32" />
+          <Property Name="stud_LastUpdatedDate" Type="DateTime" />
+          <Property Name="stud_LastUpdatedBy" Type="Int32" />
+          <Property Name="stud_Photo" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="tstudentcol" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="thousenominations" Relationship="Self.FK__tHouseNom__Hsn_s__48CFD27E" FromRole="tstudent" ToRole="thousenomination" />
+          <NavigationProperty Name="thous" Relationship="Self.FK__tStudent__stud_H__34C8D9D1" FromRole="tstudent" ToRole="thouses" />
+          <NavigationProperty Name="tsenatenominations" Relationship="Self.FK__tSenateNo__Snn_s__3C69FB99" FromRole="tstudent" ToRole="tsenatenomination" />
+          <NavigationProperty Name="tvotedstudents" Relationship="Self.FK__tVotedStu__Vst_S__619B8048" FromRole="tstudent" ToRole="tvotedstudent" />
+        </EntityType>
+        <EntityType Name="tvotedstudent">
+          <Key>
+            <PropertyRef Name="Vst_Id" />
+          </Key>
+          <Property Name="Vst_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Vst_StudentKey" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Vst_IVFHouse" Type="Boolean" />
+          <Property Name="Vst_IVFSenate" Type="Boolean" />
+          <NavigationProperty Name="tstudent" Relationship="Self.FK__tVotedStu__Vst_S__619B8048" FromRole="tvotedstudent" ToRole="tstudent" />
+        </EntityType>
+        <Association Name="FK__tHouseDes__Hsd_H__2A4B4B5E">
+          <End Role="thouses" Type="Self.thous" Multiplicity="0..1" />
+          <End Role="thousedesignation" Type="Self.thousedesignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouses">
+              <PropertyRef Name="Hus_Id" />
+            </Principal>
+            <Dependent Role="thousedesignation">
+              <PropertyRef Name="Hsd_HouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tHouseNom__Hsn_H__46E78A0C">
+          <End Role="thousedesignation" Type="Self.thousedesignation" Multiplicity="0..1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thousedesignation">
+              <PropertyRef Name="Hsd_Id" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_HouseDesignationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ElectionId_tHouseNom_Hsn_ElectionId">
+          <End Role="thouseelection" Type="Self.thouseelection" Multiplicity="1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouseelection">
+              <PropertyRef Name="Hel_ElectionId" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_HouseElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tHouseNom__Hsn_H__45F365D3">
+          <End Role="thouses" Type="Self.thous" Multiplicity="0..1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouses">
+              <PropertyRef Name="Hus_Id" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_HouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tHouseNom__Hsn_s__48CFD27E">
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="0..1" />
+          <End Role="thousenomination" Type="Self.thousenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tstudent">
+              <PropertyRef Name="stud_Key" />
+            </Principal>
+            <Dependent Role="thousenomination">
+              <PropertyRef Name="Hsn_studKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tStudent__stud_H__34C8D9D1">
+          <End Role="thouses" Type="Self.thous" Multiplicity="0..1" />
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="thouses">
+              <PropertyRef Name="Hus_Id" />
+            </Principal>
+            <Dependent Role="tstudent">
+              <PropertyRef Name="stud_HouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tSenateNo__Snn_S__3A81B327">
+          <End Role="tsenatedesignation" Type="Self.tsenatedesignation" Multiplicity="0..1" />
+          <End Role="tsenatenomination" Type="Self.tsenatenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tsenatedesignation">
+              <PropertyRef Name="Sen_Id" />
+            </Principal>
+            <Dependent Role="tsenatenomination">
+              <PropertyRef Name="Snn_SenateDesignationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ElectionId">
+          <End Role="tsenateelection" Type="Self.tsenateelection" Multiplicity="1" />
+          <End Role="tsenatenomination" Type="Self.tsenatenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tsenateelection">
+              <PropertyRef Name="Sel_ElectionId" />
+            </Principal>
+            <Dependent Role="tsenatenomination">
+              <PropertyRef Name="Snn_SenateElectionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tSenateNo__Snn_s__3C69FB99">
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="0..1" />
+          <End Role="tsenatenomination" Type="Self.tsenatenomination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tstudent">
+              <PropertyRef Name="stud_Key" />
+            </Principal>
+            <Dependent Role="tsenatenomination">
+              <PropertyRef Name="Snn_studKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tVotedStu__Vst_S__619B8048">
+          <End Role="tstudent" Type="Self.tstudent" Multiplicity="0..1" />
+          <End Role="tvotedstudent" Type="Self.tvotedstudent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tstudent">
+              <PropertyRef Name="stud_Key" />
+            </Principal>
+            <Dependent Role="tvotedstudent">
+              <PropertyRef Name="Vst_StudentKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DashboardEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="thousedesignations" EntityType="Self.thousedesignation" />
+          <EntitySet Name="thouseelections" EntityType="Self.thouseelection" />
+          <EntitySet Name="thousenominations" EntityType="Self.thousenomination" />
+          <EntitySet Name="thouses" EntityType="Self.thous" />
+          <EntitySet Name="tsenatedesignations" EntityType="Self.tsenatedesignation" />
+          <EntitySet Name="tsenateelections" EntityType="Self.tsenateelection" />
+          <EntitySet Name="tsenatenominations" EntityType="Self.tsenatenomination" />
+          <EntitySet Name="tstudents" EntityType="Self.tstudent" />
+          <EntitySet Name="tvotedstudents" EntityType="Self.tvotedstudent" />
+          <AssociationSet Name="FK__tHouseDes__Hsd_H__2A4B4B5E" Association="Self.FK__tHouseDes__Hsd_H__2A4B4B5E">
+            <End Role="thouses" EntitySet="thouses" />
+            <End Role="thousedesignation" EntitySet="thousedesignations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tHouseNom__Hsn_H__46E78A0C" Association="Self.FK__tHouseNom__Hsn_H__46E78A0C">
+            <End Role="thousedesignation" EntitySet="thousedesignations" />
+            <End Role="thousenomination" EntitySet="thousenominations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ElectionId_tHouseNom_Hsn_ElectionId" Association="Self.FK_ElectionId_tHouseNom_Hsn_ElectionId">
+            <End Role="thouseelection" EntitySet="thouseelections" />
+            <End Role="thousenomination" EntitySet="thousenominations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tHouseNom__Hsn_H__45F365D3" Association="Self.FK__tHouseNom__Hsn_H__45F365D3">
+            <End Role="thouses" EntitySet="thouses" />
+            <End Role="thousenomination" EntitySet="thousenominations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tHouseNom__Hsn_s__48CFD27E" Association="Self.FK__tHouseNom__Hsn_s__48CFD27E">
+            <End Role="tstudent" EntitySet="tstudents" />
+            <End Role="thousenomination" EntitySet="thousenominations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tStudent__stud_H__34C8D9D1" Association="Self.FK__tStudent__stud_H__34C8D9D1">
+            <End Role="thouses" EntitySet="thouses" />
+            <End Role="tstudent" EntitySet="tstudents" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tSenateNo__Snn_S__3A81B327" Association="Self.FK__tSenateNo__Snn_S__3A81B327">
+            <End Role="tsenatedesignation" EntitySet="tsenatedesignations" />
+            <End Role="tsenatenomination" EntitySet="tsenatenominations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ElectionId" Association="Self.FK__ElectionId">
+            <End Role="tsenateelection" EntitySet="tsenateelections" />
+            <End Role="tsenatenomination" EntitySet="tsenatenominations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tSenateNo__Snn_s__3C69FB99" Association="Self.FK__tSenateNo__Snn_s__3C69FB99">
+            <End Role="tstudent" EntitySet="tstudents" />
+            <End Role="tsenatenomination" EntitySet="tsenatenominations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tVotedStu__Vst_S__619B8048" Association="Self.FK__tVotedStu__Vst_S__619B8048">
+            <End Role="tstudent" EntitySet="tstudents" />
+            <End Role="tvotedstudent" EntitySet="tvotedstudents" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DashboardEFStoreContainer" CdmEntityContainer="DashboardEntities">
+          <EntitySetMapping Name="thousedesignations">
+            <EntityTypeMapping TypeName="DashboardEF.thousedesignation">
+              <MappingFragment StoreEntitySet="thousedesignation">
+                <ScalarProperty Name="Hsd_Id" ColumnName="Hsd_Id" />
+                <ScalarProperty Name="Hsd_HouseId" ColumnName="Hsd_HouseId" />
+                <ScalarProperty Name="Hsd_Name" ColumnName="Hsd_Name" />
+                <ScalarProperty Name="Hsd_Description" ColumnName="Hsd_Description" />
+                <ScalarProperty Name="Hsd_DesCode" ColumnName="Hsd_DesCode" />
+                <ScalarProperty Name="Hsd_Gender" ColumnName="Hsd_Gender" />
+                <ScalarProperty Name="Hsd_IsDeleted" ColumnName="Hsd_IsDeleted" />
+                <ScalarProperty Name="Hsd_DeletedDate" ColumnName="Hsd_DeletedDate" />
+                <ScalarProperty Name="Hsd_DeletedBy" ColumnName="Hsd_DeletedBy" />
+                <ScalarProperty Name="Hsd_LastUpdatedDate" ColumnName="Hsd_LastUpdatedDate" />
+                <ScalarProperty Name="Hsd_LastUpdatedBy" ColumnName="Hsd_LastUpdatedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="thouseelections">
+            <EntityTypeMapping TypeName="DashboardEF.thouseelection">
+              <MappingFragment StoreEntitySet="thouseelection">
+                <ScalarProperty Name="Hel_ElectionId" ColumnName="Hel_ElectionId" />
+                <ScalarProperty Name="Hel_StartDate" ColumnName="Hel_StartDate" />
+                <ScalarProperty Name="Hel_EndDate" ColumnName="Hel_EndDate" />
+                <ScalarProperty Name="Hel_Description" ColumnName="Hel_Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="thousenominations">
+            <EntityTypeMapping TypeName="DashboardEF.thousenomination">
+              <MappingFragment StoreEntitySet="thousenomination">
+                <ScalarProperty Name="Hsn_Id" ColumnName="Hsn_Id" />
+                <ScalarProperty Name="Hsn_HouseId" ColumnName="Hsn_HouseId" />
+                <ScalarProperty Name="Hsn_HouseDesignationId" ColumnName="Hsn_HouseDesignationId" />
+                <ScalarProperty Name="Hsn_ClassSectionId" ColumnName="Hsn_ClassSectionId" />
+                <ScalarProperty Name="Hsn_studKey" ColumnName="Hsn_studKey" />
+                <ScalarProperty Name="Hsn_VoteCount" ColumnName="Hsn_VoteCount" />
+                <ScalarProperty Name="Hsn_Photo" ColumnName="Hsn_Photo" />
+                <ScalarProperty Name="Hsn_AboutNominee" ColumnName="Hsn_AboutNominee" />
+                <ScalarProperty Name="Hsn_IsDeleted" ColumnName="Hsn_IsDeleted" />
+                <ScalarProperty Name="Hsn_DeletedDate" ColumnName="Hsn_DeletedDate" />
+                <ScalarProperty Name="Hsn_DeletedBy" ColumnName="Hsn_DeletedBy" />
+                <ScalarProperty Name="Hsn_LastUpdatedDate" ColumnName="Hsn_LastUpdatedDate" />
+                <ScalarProperty Name="Hsn_LastUpdatedBy" ColumnName="Hsn_LastUpdatedBy" />
+                <ScalarProperty Name="Hsn_HouseElectionId" ColumnName="Hsn_HouseElectionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="thouses">
+            <EntityTypeMapping TypeName="DashboardEF.thous">
+              <MappingFragment StoreEntitySet="thouses">
+                <ScalarProperty Name="Hus_Id" ColumnName="Hus_Id" />
+                <ScalarProperty Name="Hus_Name" ColumnName="Hus_Name" />
+                <ScalarProperty Name="Hus_Description" ColumnName="Hus_Description" />
+                <ScalarProperty Name="Hus_HouseCode" ColumnName="Hus_HouseCode" />
+                <ScalarProperty Name="Hus_IsDeleted" ColumnName="Hus_IsDeleted" />
+                <ScalarProperty Name="Hus_DeletedDate" ColumnName="Hus_DeletedDate" />
+                <ScalarProperty Name="Hus_DeletedBy" ColumnName="Hus_DeletedBy" />
+                <ScalarProperty Name="Hus_LastUpdatedDate" ColumnName="Hus_LastUpdatedDate" />
+                <ScalarProperty Name="Hus_LastUpdatedBy" ColumnName="Hus_LastUpdatedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tsenatedesignations">
+            <EntityTypeMapping TypeName="DashboardEF.tsenatedesignation">
+              <MappingFragment StoreEntitySet="tsenatedesignation">
+                <ScalarProperty Name="Sen_Id" ColumnName="Sen_Id" />
+                <ScalarProperty Name="Sen_Name" ColumnName="Sen_Name" />
+                <ScalarProperty Name="Sen_Description" ColumnName="Sen_Description" />
+                <ScalarProperty Name="Sen_DesCode" ColumnName="Sen_DesCode" />
+                <ScalarProperty Name="Sen_Gender" ColumnName="Sen_Gender" />
+                <ScalarProperty Name="Sen_IsDeleted" ColumnName="Sen_IsDeleted" />
+                <ScalarProperty Name="Sen_DeletedDate" ColumnName="Sen_DeletedDate" />
+                <ScalarProperty Name="Sen_DeletedBy" ColumnName="Sen_DeletedBy" />
+                <ScalarProperty Name="Sen_LastUpdatedDate" ColumnName="Sen_LastUpdatedDate" />
+                <ScalarProperty Name="Sen_LastUpdatedBy" ColumnName="Sen_LastUpdatedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tsenateelections">
+            <EntityTypeMapping TypeName="DashboardEF.tsenateelection">
+              <MappingFragment StoreEntitySet="tsenateelection">
+                <ScalarProperty Name="Sel_ElectionId" ColumnName="Sel_ElectionId" />
+                <ScalarProperty Name="Sel_StartDate" ColumnName="Sel_StartDate" />
+                <ScalarProperty Name="Sel_EndDate" ColumnName="Sel_EndDate" />
+                <ScalarProperty Name="Sel_Description" ColumnName="Sel_Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tsenatenominations">
+            <EntityTypeMapping TypeName="DashboardEF.tsenatenomination">
+              <MappingFragment StoreEntitySet="tsenatenomination">
+                <ScalarProperty Name="Snn_Id" ColumnName="Snn_Id" />
+                <ScalarProperty Name="Snn_SenateDesignationId" ColumnName="Snn_SenateDesignationId" />
+                <ScalarProperty Name="Snn_ClassSectionId" ColumnName="Snn_ClassSectionId" />
+                <ScalarProperty Name="Snn_studKey" ColumnName="Snn_studKey" />
+                <ScalarProperty Name="Snn_VoteCount" ColumnName="Snn_VoteCount" />
+                <ScalarProperty Name="Snn_Photo" ColumnName="Snn_Photo" />
+                <ScalarProperty Name="Snn_AboutNominee" ColumnName="Snn_AboutNominee" />
+                <ScalarProperty Name="Snn_IsDeleted" ColumnName="Snn_IsDeleted" />
+                <ScalarProperty Name="Snn_DeletedDate" ColumnName="Snn_DeletedDate" />
+                <ScalarProperty Name="Snn_DeletedBy" ColumnName="Snn_DeletedBy" />
+                <ScalarProperty Name="Snn_LastUpdatedDate" ColumnName="Snn_LastUpdatedDate" />
+                <ScalarProperty Name="Snn_LastUpdatedBy" ColumnName="Snn_LastUpdatedBy" />
+                <ScalarProperty Name="Snn_SenateElectionId" ColumnName="Snn_SenateElectionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tstudents">
+            <EntityTypeMapping TypeName="DashboardEF.tstudent">
+              <MappingFragment StoreEntitySet="tstudent">
+                <ScalarProperty Name="stud_Id" ColumnName="stud_Id" />
+                <ScalarProperty Name="stud_Key" ColumnName="stud_Key" />
+                <ScalarProperty Name="stud_FirstName" ColumnName="stud_FirstName" />
+                <ScalarProperty Name="stud_MiddleName" ColumnName="stud_MiddleName" />
+                <ScalarProperty Name="stud_LastName" ColumnName="stud_LastName" />
+                <ScalarProperty Name="stud_DoB" ColumnName="stud_DoB" />
+                <ScalarProperty Name="stud_GenderId" ColumnName="stud_GenderId" />
+                <ScalarProperty Name="stud_ClassSectionId" ColumnName="stud_ClassSectionId" />
+                <ScalarProperty Name="stud_HouseId" ColumnName="stud_HouseId" />
+                <ScalarProperty Name="stud_IsActive" ColumnName="stud_IsActive" />
+                <ScalarProperty Name="stud_Password" ColumnName="stud_Password" />
+                <ScalarProperty Name="stud_CreatedDate" ColumnName="stud_CreatedDate" />
+                <ScalarProperty Name="stud_CreatedBy" ColumnName="stud_CreatedBy" />
+                <ScalarProperty Name="stud_IsDeleted" ColumnName="stud_IsDeleted" />
+                <ScalarProperty Name="stud_DeletedDate" ColumnName="stud_DeletedDate" />
+                <ScalarProperty Name="stud_DeletedBy" ColumnName="stud_DeletedBy" />
+                <ScalarProperty Name="stud_LastUpdatedDate" ColumnName="stud_LastUpdatedDate" />
+                <ScalarProperty Name="stud_LastUpdatedBy" ColumnName="stud_LastUpdatedBy" />
+                <ScalarProperty Name="stud_Photo" ColumnName="stud_Photo" />
+                <ScalarProperty Name="tstudentcol" ColumnName="tstudentcol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tvotedstudents">
+            <EntityTypeMapping TypeName="DashboardEF.tvotedstudent">
+              <MappingFragment StoreEntitySet="tvotedstudent">
+                <ScalarProperty Name="Vst_Id" ColumnName="Vst_Id" />
+                <ScalarProperty Name="Vst_StudentKey" ColumnName="Vst_StudentKey" />
+                <ScalarProperty Name="Vst_IVFHouse" ColumnName="Vst_IVFHouse" />
+                <ScalarProperty Name="Vst_IVFSenate" ColumnName="Vst_IVFSenate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

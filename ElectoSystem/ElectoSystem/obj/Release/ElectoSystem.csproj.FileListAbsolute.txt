@@ -1,0 +1,3 @@
+D:\DotNet\SVN\Code\ElectoSystem\ElectoSystem\obj\Release\ElectoSystem.Common.Resource.resources
+D:\DotNet\SVN\Code\ElectoSystem\ElectoSystem\obj\Release\ElectoSystem.csproj.GenerateResource.Cache
+D:\DotNet\SVN\Code\ElectoSystem\ElectoSystem\obj\Release\ElectoSystem.csprojResolveAssemblyReference.cache

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="votinglivedbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="tacademicyear">
+    <Key>
+      <PropertyRef Name="Acy_Id" />
+    </Key>
+    <Property Name="Acy_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Acy_AcademicYear" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Acy_StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="Acy_EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="Acy_IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="Acy_IsDeleted" Type="Boolean" />
+    <Property Name="Acy_DeletedDate" Type="DateTime" />
+    <Property Name="Acy_DeletedBy" Type="Int32" />
+    <Property Name="Acy_LastUpdatedDate" Type="DateTime" />
+    <Property Name="Acy_LastUpdatedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tclass">
+    <Key>
+      <PropertyRef Name="Cls_Id" />
+    </Key>
+    <Property Name="Cls_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cls_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Cls_DisplayName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Cls_IsDeleted" Type="Boolean" />
+    <Property Name="Cls_DeletedDate" Type="DateTime" />
+    <Property Name="Cls_DeletedBy" Type="Int32" />
+    <Property Name="Cls_LastUpdatedDate" Type="DateTime" />
+    <Property Name="Cls_LastUpdatedBy" Type="Int32" />
+    <NavigationProperty Name="tclasssections" Relationship="Self.FK__tClassSec__Csc_C__22AA2996" FromRole="tclass" ToRole="tclasssection" />
+  </EntityType>
+  <EntityType Name="tclasssection">
+    <Key>
+      <PropertyRef Name="Csc_Id" />
+    </Key>
+    <Property Name="Csc_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Csc_ClassId" Type="Int32" />
+    <Property Name="Csc_SectionId" Type="Int32" />
+    <Property Name="Csc_DisplayName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Csc_IsDeleted" Type="Boolean" />
+    <Property Name="Csc_DeletedDate" Type="DateTime" />
+    <Property Name="Csc_DeletedBy" Type="Int32" />
+    <Property Name="Csc_LastUpdatedDate" Type="DateTime" />
+    <Property Name="Csc_LastUpdatedBy" Type="Int32" />
+    <NavigationProperty Name="tclass" Relationship="Self.FK__tClassSec__Csc_C__22AA2996" FromRole="tclasssection" ToRole="tclass" />
+    <NavigationProperty Name="tsection" Relationship="Self.FK__tClassSec__Csc_S__239E4DCF" FromRole="tclasssection" ToRole="tsection" />
+  </EntityType>
+  <EntityType Name="thous">
+    <Key>
+      <PropertyRef Name="Hus_Id" />
+    </Key>
+    <Property Name="Hus_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hus_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Hus_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Hus_HouseCode" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Hus_IsDeleted" Type="Boolean" />
+    <Property Name="Hus_DeletedDate" Type="DateTime" />
+    <Property Name="Hus_DeletedBy" Type="Int32" />
+    <Property Name="Hus_LastUpdatedDate" Type="DateTime" />
+    <Property Name="Hus_LastUpdatedBy" Type="Int32" />
+    <NavigationProperty Name="thousedesignations" Relationship="votinglivedbModel.FK__tHouseDes__Hsd_H__2A4B4B5E" FromRole="thous" ToRole="thousedesignation" />
+  </EntityType>
+  <EntityType Name="tsection">
+    <Key>
+      <PropertyRef Name="Sec_Id" />
+    </Key>
+    <Property Name="Sec_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sec_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Sec_DisplayName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Sec_IsDeleted" Type="Boolean" />
+    <Property Name="Sec_DeletedDate" Type="DateTime" />
+    <Property Name="Sec_DeletedBy" Type="Int32" />
+    <Property Name="Sec_LastUpdatedDate" Type="DateTime" />
+    <Property Name="Sec_LastUpdatedBy" Type="Int32" />
+    <NavigationProperty Name="tclasssections" Relationship="Self.FK__tClassSec__Csc_S__239E4DCF" FromRole="tsection" ToRole="tclasssection" />
+  </EntityType>
+  <Association Name="FK__tClassSec__Csc_C__22AA2996">
+    <End Role="tclass" Type="Self.tclass" Multiplicity="0..1" />
+    <End Role="tclasssection" Type="Self.tclasssection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tclass">
+        <PropertyRef Name="Cls_Id" />
+      </Principal>
+      <Dependent Role="tclasssection">
+        <PropertyRef Name="Csc_ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tClassSec__Csc_S__239E4DCF">
+    <End Role="tsection" Type="Self.tsection" Multiplicity="0..1" />
+    <End Role="tclasssection" Type="Self.tclasssection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tsection">
+        <PropertyRef Name="Sec_Id" />
+      </Principal>
+      <Dependent Role="tclasssection">
+        <PropertyRef Name="Csc_SectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="votinglivedbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tacademicyears" EntityType="Self.tacademicyear" />
+    <EntitySet Name="tclasses" EntityType="Self.tclass" />
+    <EntitySet Name="tclasssections" EntityType="Self.tclasssection" />
+    <EntitySet Name="thouses" EntityType="Self.thous" />
+    <EntitySet Name="tsections" EntityType="Self.tsection" />
+    <AssociationSet Name="FK__tClassSec__Csc_C__22AA2996" Association="Self.FK__tClassSec__Csc_C__22AA2996">
+      <End Role="tclass" EntitySet="tclasses" />
+      <End Role="tclasssection" EntitySet="tclasssections" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tClassSec__Csc_S__239E4DCF" Association="Self.FK__tClassSec__Csc_S__239E4DCF">
+      <End Role="tsection" EntitySet="tsections" />
+      <End Role="tclasssection" EntitySet="tclasssections" />
+    </AssociationSet>
+    <EntitySet Name="thousedesignations" EntityType="votinglivedbModel.thousedesignation" />
+    <EntitySet Name="tsenatedesignations" EntityType="votinglivedbModel.tsenatedesignation" />
+    <AssociationSet Name="FK__tHouseDes__Hsd_H__2A4B4B5E" Association="votinglivedbModel.FK__tHouseDes__Hsd_H__2A4B4B5E">
+      <End Role="thous" EntitySet="thouses" />
+      <End Role="thousedesignation" EntitySet="thousedesignations" />
+    </AssociationSet>
+    <EntitySet Name="thouseelections" EntityType="votinglivedbModel.thouseelection" />
+    <EntitySet Name="tsenateelections" EntityType="votinglivedbModel.tsenateelection" />
+  </EntityContainer>
+  <EntityType Name="thousedesignation">
+    <Key>
+      <PropertyRef Name="Hsd_Id" />
+    </Key>
+    <Property Name="Hsd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hsd_HouseId" Type="Int32" />
+    <Property Name="Hsd_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Hsd_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Hsd_DesCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Hsd_Gender" Type="Int32" />
+    <Property Name="Hsd_IsDeleted" Type="Boolean" />
+    <Property Name="Hsd_DeletedDate" Type="DateTime" />
+    <Property Name="Hsd_DeletedBy" Type="Int32" />
+    <Property Name="Hsd_LastUpdatedDate" Type="DateTime" />
+    <Property Name="Hsd_LastUpdatedBy" Type="Int32" />
+    <NavigationProperty Name="thous" Relationship="votinglivedbModel.FK__tHouseDes__Hsd_H__2A4B4B5E" FromRole="thousedesignation" ToRole="thous" />
+  </EntityType>
+  <EntityType Name="tsenatedesignation">
+    <Key>
+      <PropertyRef Name="Sen_Id" />
+    </Key>
+    <Property Name="Sen_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sen_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Sen_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Sen_DesCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Sen_Gender" Type="Int32" />
+    <Property Name="Sen_IsDeleted" Type="Boolean" />
+    <Property Name="Sen_DeletedDate" Type="DateTime" />
+    <Property Name="Sen_DeletedBy" Type="Int32" />
+    <Property Name="Sen_LastUpdatedDate" Type="DateTime" />
+    <Property Name="Sen_LastUpdatedBy" Type="Int32" />
+  </EntityType>
+  <Association Name="FK__tHouseDes__Hsd_H__2A4B4B5E">
+    <End Type="votinglivedbModel.thous" Role="thous" Multiplicity="0..1" />
+    <End Type="votinglivedbModel.thousedesignation" Role="thousedesignation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="thous">
+        <PropertyRef Name="Hus_Id" />
+      </Principal>
+      <Dependent Role="thousedesignation">
+        <PropertyRef Name="Hsd_HouseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="thouseelection">
+    <Key>
+      <PropertyRef Name="Hel_ElectionId" />
+    </Key>
+    <Property Name="Hel_ElectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hel_StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="Hel_EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="Hel_Description" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tsenateelection">
+    <Key>
+      <PropertyRef Name="Sel_ElectionId" />
+    </Key>
+    <Property Name="Sel_ElectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sel_StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="Sel_EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="Sel_Description" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

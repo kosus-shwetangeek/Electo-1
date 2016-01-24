@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\DotNet\Publish Code\ElectoSystemV3</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin/AdminWelcome.aspx">
+      <publishTime>01/01/2016 01:08:31</publishTime>
+    </File>
+    <File Include="Admin/HouseDesignation.aspx">
+      <publishTime>12/05/2015 19:28:53</publishTime>
+    </File>
+    <File Include="Admin/HouseElection.aspx">
+      <publishTime>01/01/2016 00:09:38</publishTime>
+    </File>
+    <File Include="Admin/HouseMaster.aspx">
+      <publishTime>01/01/2016 00:09:38</publishTime>
+    </File>
+    <File Include="Admin/HouseNomination.aspx">
+      <publishTime>01/01/2016 00:09:38</publishTime>
+    </File>
+    <File Include="Admin/SenateDesignation.aspx">
+      <publishTime>01/01/2016 00:09:38</publishTime>
+    </File>
+    <File Include="Admin/SenateElection.aspx">
+      <publishTime>01/01/2016 00:09:38</publishTime>
+    </File>
+    <File Include="Admin/SenateNomination.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Admin/Staff.Master">
+      <publishTime>12/31/2015 23:43:45</publishTime>
+    </File>
+    <File Include="Admin/StudentHouseMaster.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Admin/StudentMaster.aspx">
+      <publishTime>12/05/2015 20:29:39</publishTime>
+    </File>
+    <File Include="Authenticate/ForgetPassword.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Authenticate/Login.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Authenticate/RegisterCandidate.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>07/18/2015 23:07:36</publishTime>
+    </File>
+    <File Include="bin/Electo.BusinessLayer.dll">
+      <publishTime>01/09/2016 10:19:17</publishTime>
+    </File>
+    <File Include="bin/Electo.BusinessLayer.pdb">
+      <publishTime>01/09/2016 10:19:16</publishTime>
+    </File>
+    <File Include="bin/Electo.Constants.dll">
+      <publishTime>01/09/2016 10:19:16</publishTime>
+    </File>
+    <File Include="bin/Electo.Constants.pdb">
+      <publishTime>01/09/2016 10:19:16</publishTime>
+    </File>
+    <File Include="bin/Electo.DataLayer.dll">
+      <publishTime>01/09/2016 10:19:16</publishTime>
+    </File>
+    <File Include="bin/Electo.DataLayer.pdb">
+      <publishTime>01/09/2016 10:19:16</publishTime>
+    </File>
+    <File Include="bin/ElectoSystem.dll">
+      <publishTime>01/09/2016 10:19:17</publishTime>
+    </File>
+    <File Include="bin/ElectoSystem.pdb">
+      <publishTime>01/09/2016 10:19:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/17/2015 23:38:06</publishTime>
+    </File>
+    <File Include="bin/Kosus.DataAccess.dll">
+      <publishTime>11/18/2015 00:18:21</publishTime>
+    </File>
+    <File Include="bin/Kosus.DataAccess.pdb">
+      <publishTime>11/18/2015 00:18:21</publishTime>
+    </File>
+    <File Include="bin/Kosus.Electo.Constants.dll">
+      <publishTime>10/17/2015 15:48:09</publishTime>
+    </File>
+    <File Include="bin/Kosus.Electo.Constants.pdb">
+      <publishTime>10/17/2015 15:48:08</publishTime>
+    </File>
+    <File Include="bin/Kosus.Electo.DataAccess.dll">
+      <publishTime>10/17/2015 15:48:09</publishTime>
+    </File>
+    <File Include="bin/Kosus.Electo.DataAccess.pdb">
+      <publishTime>10/17/2015 15:48:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>07/16/2012 11:08:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>07/16/2012 16:01:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.pdb">
+      <publishTime>07/16/2012 13:23:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>07/16/2012 16:01:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.pdb">
+      <publishTime>07/16/2012 13:23:14</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/17/2015 23:39:04</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.min.css">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/css/font-awesome-min.css">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.eot">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.svg">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.woff">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/FontAwesome.otf">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.js">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.min.js">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="bootstrap/js/npm.js">
+      <publishTime>08/02/2015 12:38:40</publishTime>
+    </File>
+    <File Include="Common/CommonInc.asp">
+      <publishTime>11/04/2015 14:09:47</publishTime>
+    </File>
+    <File Include="Dashboard.edmx.diagram">
+      <publishTime>01/01/2016 00:13:55</publishTime>
+    </File>
+    <File Include="dist/css/AdminLTE.css">
+      <publishTime>09/11/2015 09:05:48</publishTime>
+    </File>
+    <File Include="dist/css/AdminLTE.min.css">
+      <publishTime>09/11/2015 09:06:10</publishTime>
+    </File>
+    <File Include="dist/css/icons-2x.png">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/icons.png">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/jquery-ui.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/jquery.datetimepicker.css">
+      <publishTime>12/04/2015 08:18:47</publishTime>
+    </File>
+    <File Include="dist/css/jquery.loader.min.css">
+      <publishTime>09/02/2015 11:36:38</publishTime>
+    </File>
+    <File Include="dist/css/jsgrid-theme.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/JSGrid.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/jsgrid.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/JSGridDemo.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-black.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-black.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-blue.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-blue.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-green.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-green.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-purple.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-purple.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-red.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-red.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-yellow.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/skin-yellow.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/_all-skins.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/skins/_all-skins.min.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/style.css">
+      <publishTime>12/31/2015 23:39:33</publishTime>
+    </File>
+    <File Include="dist/css/theme.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/TinyBox.css">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/css/toastr.css">
+      <publishTime>08/25/2015 00:02:32</publishTime>
+    </File>
+    <File Include="dist/css/toastr.min.css">
+      <publishTime>08/25/2015 00:02:26</publishTime>
+    </File>
+    <File Include="dist/img/7AF2Qzt.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/8bcLQqF.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/ajax-loader.gif">
+      <publishTime>09/02/2015 11:32:06</publishTime>
+    </File>
+    <File Include="dist/img/bg1.jpg">
+      <publishTime>08/04/2015 23:55:56</publishTime>
+    </File>
+    <File Include="dist/img/boy.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/cal.ico">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/calender.png">
+      <publishTime>08/04/2015 23:55:56</publishTime>
+    </File>
+    <File Include="dist/img/close.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/dT7eM7rac.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Electo_Logo-1.png">
+      <publishTime>09/10/2015 23:32:40</publishTime>
+    </File>
+    <File Include="dist/img/Hd.Boy-Archit Kulkarni%28IX%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Hd.Boy-Atharva Pansar%28IX%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Hd.Boy-Pranal Pawar%28IX%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Hd.Girl-AnupritaKulkarni%28IX%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Hd.Girl-ManasiTamgole %28IX%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Hd.Girl-SaloniShetye%28IX%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Hd.Girl-VaishnaviDesai%28IX%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/icons-2x.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/icons.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - AGNI - Archita Naik %28V%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - AGNI - Parth Jedhe %28IV%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - AGNI - Rucha Gadgil %28IV%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - AGNI - Vaishnav Pawar %28IV%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - PRITHVI - Astha Bhayani %28V%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - PRITHVI - Sanika Chaudhary %28IV%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - PRITHVI - V. Aniruddha %28V%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - SURYA - Dishita Marathe %28V%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - SURYA - Tejas Nakhate %28V%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - VARUN - Apoorva Landge %28IV%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Jr.Prf - VARUN - Apoorva Padwal %28V%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/logo.png">
+      <publishTime>11/05/2015 17:31:30</publishTime>
+    </File>
+    <File Include="dist/img/mandatory.ico">
+      <publishTime>11/19/2015 01:39:20</publishTime>
+    </File>
+    <File Include="dist/img/mandatory.svg">
+      <publishTime>11/27/2015 22:48:52</publishTime>
+    </File>
+    <File Include="dist/img/mandatory16x16.svg">
+      <publishTime>11/28/2015 00:35:05</publishTime>
+    </File>
+    <File Include="dist/img/Pref PRITHVI- Durva Ghate %28IX%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Pref SURYA- Swamini Shirsath %28IX%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Pref SURYA- Yashraj Ranawade %28VII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Pref VARUN- Anusha Bhanap %28VIII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Pref VARUN- Pratham Kshirsagar %28VII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Pref VARUN- Sumer Raravikar %28VIII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/preload.gif">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Prf - AGNI - Harsh Mohite %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Prf - AGNI - Prutha Chinchore %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Prf - PRITHVI - Anish Aundhkar %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Prf - SURYA - Dheeral Bhayani %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Prf - VARUN - Reva Gadgil %28VII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/reset-pass.jpg">
+      <publishTime>08/04/2015 23:55:56</publishTime>
+    </File>
+    <File Include="dist/img/SubmitVote.gif">
+      <publishTime>08/25/2015 13:50:40</publishTime>
+    </File>
+    <File Include="dist/img/user2-160x160.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref AGNI - Ashish Tiwade %28VII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref AGNI - Gayatri Walture %28VI%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref PRITHVI - Madhura Kapshikar %28VII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref PRITHVI- Vishesh Bhandare %28VI%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref SURYA - Apoorv Thite %28VI%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref SURYA - Shweta Mahajan %28VII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref SURYA- Anurag Bhosale %28VII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref VARUN - Parth Deshmukh %28VII%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc. Pref VARUN - Pranav Raskar %28VI%29.png">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.GmsCap - Pratham Harpude %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.GmsCap - Prithvi Jadhav %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.GmsCap - Saniya Pendhari %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.GmsCap - Sneha Shetty %28VIII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.Prf - AGNI - Astha Baviskar %28VI%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.Prf - PRITHVI - Sara Powar %28VI%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.Prf - PRITHVI - Shruti Kodre %28VI%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.Prf - SURYA - Vaibhava Waghmode %28VII%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.Prf - VARUN- Anuja Bhadane %28VI%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/img/Vc.Prf - VARUN- Diya Shetty %28VI%29.jpg">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/app.js">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/app.min.js">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/canvasjs.min.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/Chart.min.js">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/demo.js">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/googleapi.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/Graphs/d3.min.js">
+      <publishTime>09/04/2015 20:19:12</publishTime>
+    </File>
+    <File Include="dist/js/Graphs/d3pie.min.js">
+      <publishTime>09/04/2015 20:32:30</publishTime>
+    </File>
+    <File Include="dist/js/jquery-1.11.3.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/jquery-1.8.3.js">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/jquery-2.1.4.js">
+      <publishTime>09/30/2015 22:05:06</publishTime>
+    </File>
+    <File Include="dist/js/jquery-2.1.4.min.js">
+      <publishTime>09/30/2015 22:06:08</publishTime>
+    </File>
+    <File Include="dist/js/jquery-ui.min.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/jquery.datetimepicker.min.js">
+      <publishTime>12/04/2015 08:18:33</publishTime>
+    </File>
+    <File Include="dist/js/jquery.loader.min.js">
+      <publishTime>09/02/2015 11:32:42</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.core.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.field.checkbox.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.field.control.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.field.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.field.number.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.field.select.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.field.text.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.field.textarea.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.load-indicator.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.load-strategies.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.min.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/JSGrid/jsgrid.sort-strategies.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/pages/dashboard.js">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/pages/dashboard2.js">
+      <publishTime>08/02/2015 12:38:30</publishTime>
+    </File>
+    <File Include="dist/js/tinybox.js">
+      <publishTime>08/02/2015 12:38:32</publishTime>
+    </File>
+    <File Include="dist/js/toastr.min.js">
+      <publishTime>08/25/2015 00:02:02</publishTime>
+    </File>
+    <File Include="Dropdown.edmx.diagram">
+      <publishTime>09/03/2015 12:29:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/17/2015 23:39:04</publishTime>
+    </File>
+    <File Include="plugins/iCheck/all.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/icheck.js">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/icheck.min.js">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/aero%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/aero.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/aero.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/blue%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/blue.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/blue.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/green%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/green.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/green.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/grey%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/grey.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/grey.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/orange%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/orange.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/orange.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/pink%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/pink.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/pink.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/purple%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/purple.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/purple.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/red%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/red.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/red.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/square%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/square.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/square.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/yellow%402x.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/yellow.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/yellow.png">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/iCheck/square/_all.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/jQuery/jQuery-2.1.3.min.js">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/morris/morris.css">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/morris/morris.js">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/morris/morris.min.js">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/slimScroll/jquery.slimscroll.js">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="plugins/slimScroll/jquery.slimscroll.min.js">
+      <publishTime>08/02/2015 12:38:28</publishTime>
+    </File>
+    <File Include="Reports/HouseReports.aspx">
+      <publishTime>01/01/2016 00:09:38</publishTime>
+    </File>
+    <File Include="Reports/SenateReport.aspx">
+      <publishTime>01/01/2016 00:09:38</publishTime>
+    </File>
+    <File Include="Test.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="UserControl/UCSenateElection.ascx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Voting/HouseElection.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Voting/NomineeDetails.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Voting/SenateElection.aspx">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Voting/Voating.Master">
+      <publishTime>11/17/2015 23:22:59</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/09/2016 10:19:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

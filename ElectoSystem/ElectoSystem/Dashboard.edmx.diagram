@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75f2726de82946f8b91624bb4c035882" Name="Diagram1">
+        <EntityTypeShape EntityType="DashboardEF.thousedesignation" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.thouseelection" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.thousenomination" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.thous" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.tsenatedesignation" Width="1.5" PointX="6" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.tsenateelection" Width="1.5" PointX="6" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.tsenatenomination" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.tstudent" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="DashboardEF.tvotedstudent" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <AssociationConnector Association="DashboardEF.FK__tHouseDes__Hsd_H__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__tHouseNom__Hsn_H__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK_ElectionId_tHouseNom_Hsn_ElectionId" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__tHouseNom__Hsn_H__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__tHouseNom__Hsn_s__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__tStudent__stud_H__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__tSenateNo__Snn_S__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__ElectionId" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__tSenateNo__Snn_s__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="DashboardEF.FK__tVotedStu__Vst_S__619B8048" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

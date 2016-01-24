@@ -1,0 +1,4 @@
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\bin\Release\Electo.Constants.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\bin\Release\Electo.Constants.pdb
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\obj\Release\Electo.Constants.dll
+D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\obj\Release\Electo.Constants.pdb

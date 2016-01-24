@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DashboardEFStoreContainer" CdmEntityContainer="DashboardEntities">
+    <EntitySetMapping Name="thousedesignations">
+      <EntityTypeMapping TypeName="DashboardEF.thousedesignation">
+        <MappingFragment StoreEntitySet="thousedesignation">
+          <ScalarProperty Name="Hsd_Id" ColumnName="Hsd_Id" />
+          <ScalarProperty Name="Hsd_HouseId" ColumnName="Hsd_HouseId" />
+          <ScalarProperty Name="Hsd_Name" ColumnName="Hsd_Name" />
+          <ScalarProperty Name="Hsd_Description" ColumnName="Hsd_Description" />
+          <ScalarProperty Name="Hsd_DesCode" ColumnName="Hsd_DesCode" />
+          <ScalarProperty Name="Hsd_Gender" ColumnName="Hsd_Gender" />
+          <ScalarProperty Name="Hsd_IsDeleted" ColumnName="Hsd_IsDeleted" />
+          <ScalarProperty Name="Hsd_DeletedDate" ColumnName="Hsd_DeletedDate" />
+          <ScalarProperty Name="Hsd_DeletedBy" ColumnName="Hsd_DeletedBy" />
+          <ScalarProperty Name="Hsd_LastUpdatedDate" ColumnName="Hsd_LastUpdatedDate" />
+          <ScalarProperty Name="Hsd_LastUpdatedBy" ColumnName="Hsd_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thouseelections">
+      <EntityTypeMapping TypeName="DashboardEF.thouseelection">
+        <MappingFragment StoreEntitySet="thouseelection">
+          <ScalarProperty Name="Hel_ElectionId" ColumnName="Hel_ElectionId" />
+          <ScalarProperty Name="Hel_StartDate" ColumnName="Hel_StartDate" />
+          <ScalarProperty Name="Hel_EndDate" ColumnName="Hel_EndDate" />
+          <ScalarProperty Name="Hel_Description" ColumnName="Hel_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thousenominations">
+      <EntityTypeMapping TypeName="DashboardEF.thousenomination">
+        <MappingFragment StoreEntitySet="thousenomination">
+          <ScalarProperty Name="Hsn_Id" ColumnName="Hsn_Id" />
+          <ScalarProperty Name="Hsn_HouseId" ColumnName="Hsn_HouseId" />
+          <ScalarProperty Name="Hsn_HouseDesignationId" ColumnName="Hsn_HouseDesignationId" />
+          <ScalarProperty Name="Hsn_ClassSectionId" ColumnName="Hsn_ClassSectionId" />
+          <ScalarProperty Name="Hsn_studKey" ColumnName="Hsn_studKey" />
+          <ScalarProperty Name="Hsn_VoteCount" ColumnName="Hsn_VoteCount" />
+          <ScalarProperty Name="Hsn_Photo" ColumnName="Hsn_Photo" />
+          <ScalarProperty Name="Hsn_AboutNominee" ColumnName="Hsn_AboutNominee" />
+          <ScalarProperty Name="Hsn_IsDeleted" ColumnName="Hsn_IsDeleted" />
+          <ScalarProperty Name="Hsn_DeletedDate" ColumnName="Hsn_DeletedDate" />
+          <ScalarProperty Name="Hsn_DeletedBy" ColumnName="Hsn_DeletedBy" />
+          <ScalarProperty Name="Hsn_LastUpdatedDate" ColumnName="Hsn_LastUpdatedDate" />
+          <ScalarProperty Name="Hsn_LastUpdatedBy" ColumnName="Hsn_LastUpdatedBy" />
+          <ScalarProperty Name="Hsn_HouseElectionId" ColumnName="Hsn_HouseElectionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thouses">
+      <EntityTypeMapping TypeName="DashboardEF.thous">
+        <MappingFragment StoreEntitySet="thouses">
+          <ScalarProperty Name="Hus_Id" ColumnName="Hus_Id" />
+          <ScalarProperty Name="Hus_Name" ColumnName="Hus_Name" />
+          <ScalarProperty Name="Hus_Description" ColumnName="Hus_Description" />
+          <ScalarProperty Name="Hus_HouseCode" ColumnName="Hus_HouseCode" />
+          <ScalarProperty Name="Hus_IsDeleted" ColumnName="Hus_IsDeleted" />
+          <ScalarProperty Name="Hus_DeletedDate" ColumnName="Hus_DeletedDate" />
+          <ScalarProperty Name="Hus_DeletedBy" ColumnName="Hus_DeletedBy" />
+          <ScalarProperty Name="Hus_LastUpdatedDate" ColumnName="Hus_LastUpdatedDate" />
+          <ScalarProperty Name="Hus_LastUpdatedBy" ColumnName="Hus_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tsenatedesignations">
+      <EntityTypeMapping TypeName="DashboardEF.tsenatedesignation">
+        <MappingFragment StoreEntitySet="tsenatedesignation">
+          <ScalarProperty Name="Sen_Id" ColumnName="Sen_Id" />
+          <ScalarProperty Name="Sen_Name" ColumnName="Sen_Name" />
+          <ScalarProperty Name="Sen_Description" ColumnName="Sen_Description" />
+          <ScalarProperty Name="Sen_DesCode" ColumnName="Sen_DesCode" />
+          <ScalarProperty Name="Sen_Gender" ColumnName="Sen_Gender" />
+          <ScalarProperty Name="Sen_IsDeleted" ColumnName="Sen_IsDeleted" />
+          <ScalarProperty Name="Sen_DeletedDate" ColumnName="Sen_DeletedDate" />
+          <ScalarProperty Name="Sen_DeletedBy" ColumnName="Sen_DeletedBy" />
+          <ScalarProperty Name="Sen_LastUpdatedDate" ColumnName="Sen_LastUpdatedDate" />
+          <ScalarProperty Name="Sen_LastUpdatedBy" ColumnName="Sen_LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tsenateelections">
+      <EntityTypeMapping TypeName="DashboardEF.tsenateelection">
+        <MappingFragment StoreEntitySet="tsenateelection">
+          <ScalarProperty Name="Sel_ElectionId" ColumnName="Sel_ElectionId" />
+          <ScalarProperty Name="Sel_StartDate" ColumnName="Sel_StartDate" />
+          <ScalarProperty Name="Sel_EndDate" ColumnName="Sel_EndDate" />
+          <ScalarProperty Name="Sel_Description" ColumnName="Sel_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tsenatenominations">
+      <EntityTypeMapping TypeName="DashboardEF.tsenatenomination">
+        <MappingFragment StoreEntitySet="tsenatenomination">
+          <ScalarProperty Name="Snn_Id" ColumnName="Snn_Id" />
+          <ScalarProperty Name="Snn_SenateDesignationId" ColumnName="Snn_SenateDesignationId" />
+          <ScalarProperty Name="Snn_ClassSectionId" ColumnName="Snn_ClassSectionId" />
+          <ScalarProperty Name="Snn_studKey" ColumnName="Snn_studKey" />
+          <ScalarProperty Name="Snn_VoteCount" ColumnName="Snn_VoteCount" />
+          <ScalarProperty Name="Snn_Photo" ColumnName="Snn_Photo" />
+          <ScalarProperty Name="Snn_AboutNominee" ColumnName="Snn_AboutNominee" />
+          <ScalarProperty Name="Snn_IsDeleted" ColumnName="Snn_IsDeleted" />
+          <ScalarProperty Name="Snn_DeletedDate" ColumnName="Snn_DeletedDate" />
+          <ScalarProperty Name="Snn_DeletedBy" ColumnName="Snn_DeletedBy" />
+          <ScalarProperty Name="Snn_LastUpdatedDate" ColumnName="Snn_LastUpdatedDate" />
+          <ScalarProperty Name="Snn_LastUpdatedBy" ColumnName="Snn_LastUpdatedBy" />
+          <ScalarProperty Name="Snn_SenateElectionId" ColumnName="Snn_SenateElectionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tstudents">
+      <EntityTypeMapping TypeName="DashboardEF.tstudent">
+        <MappingFragment StoreEntitySet="tstudent">
+          <ScalarProperty Name="stud_Id" ColumnName="stud_Id" />
+          <ScalarProperty Name="stud_Key" ColumnName="stud_Key" />
+          <ScalarProperty Name="stud_FirstName" ColumnName="stud_FirstName" />
+          <ScalarProperty Name="stud_MiddleName" ColumnName="stud_MiddleName" />
+          <ScalarProperty Name="stud_LastName" ColumnName="stud_LastName" />
+          <ScalarProperty Name="stud_DoB" ColumnName="stud_DoB" />
+          <ScalarProperty Name="stud_GenderId" ColumnName="stud_GenderId" />
+          <ScalarProperty Name="stud_ClassSectionId" ColumnName="stud_ClassSectionId" />
+          <ScalarProperty Name="stud_HouseId" ColumnName="stud_HouseId" />
+          <ScalarProperty Name="stud_IsActive" ColumnName="stud_IsActive" />
+          <ScalarProperty Name="stud_Password" ColumnName="stud_Password" />
+          <ScalarProperty Name="stud_CreatedDate" ColumnName="stud_CreatedDate" />
+          <ScalarProperty Name="stud_CreatedBy" ColumnName="stud_CreatedBy" />
+          <ScalarProperty Name="stud_IsDeleted" ColumnName="stud_IsDeleted" />
+          <ScalarProperty Name="stud_DeletedDate" ColumnName="stud_DeletedDate" />
+          <ScalarProperty Name="stud_DeletedBy" ColumnName="stud_DeletedBy" />
+          <ScalarProperty Name="stud_LastUpdatedDate" ColumnName="stud_LastUpdatedDate" />
+          <ScalarProperty Name="stud_LastUpdatedBy" ColumnName="stud_LastUpdatedBy" />
+          <ScalarProperty Name="stud_Photo" ColumnName="stud_Photo" />
+          <ScalarProperty Name="tstudentcol" ColumnName="tstudentcol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tvotedstudents">
+      <EntityTypeMapping TypeName="DashboardEF.tvotedstudent">
+        <MappingFragment StoreEntitySet="tvotedstudent">
+          <ScalarProperty Name="Vst_Id" ColumnName="Vst_Id" />
+          <ScalarProperty Name="Vst_StudentKey" ColumnName="Vst_StudentKey" />
+          <ScalarProperty Name="Vst_IVFHouse" ColumnName="Vst_IVFHouse" />
+          <ScalarProperty Name="Vst_IVFSenate" ColumnName="Vst_IVFSenate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

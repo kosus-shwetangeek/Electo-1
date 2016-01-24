@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="872cbca31adf40ee977324fe55755166" Name="Diagram1">
+        <EntityTypeShape EntityType="votinglivedbModel.tacademicyear" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="votinglivedbModel.tclass" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="votinglivedbModel.tclasssection" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="votinglivedbModel.thous" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="votinglivedbModel.tsection" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="votinglivedbModel.FK__tClassSec__Csc_C__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="votinglivedbModel.FK__tClassSec__Csc_S__239E4DCF" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="votinglivedbModel.thousedesignation" Width="1.5" PointX="5" PointY="5.5" />
+        <EntityTypeShape EntityType="votinglivedbModel.tsenatedesignation" Width="1.5" PointX="7.375" PointY="4.75" />
+        <AssociationConnector Association="votinglivedbModel.FK__tHouseDes__Hsd_H__2A4B4B5E" />
+        <EntityTypeShape EntityType="votinglivedbModel.thouseelection" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="votinglivedbModel.tsenateelection" Width="1.5" PointX="7.375" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

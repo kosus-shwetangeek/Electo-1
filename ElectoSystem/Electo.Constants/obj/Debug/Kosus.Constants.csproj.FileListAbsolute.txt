@@ -1,0 +1,4 @@
+D:\DotNet\SVN\Code\Common\Constants\bin\Debug\Kosus.Constants.dll
+D:\DotNet\SVN\Code\Common\Constants\bin\Debug\Kosus.Constants.pdb
+D:\DotNet\SVN\Code\Common\Constants\obj\Debug\Kosus.Constants.dll
+D:\DotNet\SVN\Code\Common\Constants\obj\Debug\Kosus.Constants.pdb

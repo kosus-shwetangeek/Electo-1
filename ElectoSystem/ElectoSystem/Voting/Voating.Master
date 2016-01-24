@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Voating.master.cs" Inherits="ElectoSystem.Voting.Voating" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.2 -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="../bootstrap/css/font-awesome-min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons 2.0.0 -->
+    <link href="../bootstrap/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Morris charts -->
+    <link href="../plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="../dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="../dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="../dist/css/style.css" rel="stylesheet" type="text/css" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="skin-blue">
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="javascript:void(0);" class="logo"></a>
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- Messages: style can be found in dropdown.less-->
+
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="<%= ((ElectoSystem.Entities.StudentEntity)Session["LoggedInUser"]).Stud_Photo %>" class="user-image" alt="User Image" />
+                                    <span class="hidden-xs">
+                                        <%= ((ElectoSystem.Entities.StudentEntity)Session["LoggedInUser"]).Stud_FName %>&nbsp;
+                                        <%= ((ElectoSystem.Entities.StudentEntity)Session["LoggedInUser"]).Stud_LName %>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <%--<li class="user-header">
+                                        <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                        <p>
+                                            Gaurav Mothekadam - B.A.
+                      <small>Member since Nov. 2012</small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Body -->
+                                    <li class="user-body">
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Followers</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Sales</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Friends</a>
+                                        </div>
+                                    </li>--%>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <%--<div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>--%>
+                                        <div class="pull-center">
+                                            <a href="../Authenticate/Login.aspx" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <div class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="image">
+                            <img src="<%= ((ElectoSystem.Entities.StudentEntity)Session["LoggedInUser"]).Stud_Photo %>" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="info">
+                            <p>
+                                <%= ((ElectoSystem.Entities.StudentEntity)Session["LoggedInUser"]).Stud_FName %>&nbsp;
+                                        <%= ((ElectoSystem.Entities.StudentEntity)Session["LoggedInUser"]).Stud_LName %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li class="header">MAIN NAVIGATION</li>
+                        <li class="active treeview">
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-table"></i><span>Election</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="HouseElection.aspx"><i class="fa fa-circle-o"></i>House Election</a></li>
+                                <li><a href="SenateElection.aspx"><i class="fa fa-circle-o"></i>Senate Election</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </div>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <%--<section class="content-header"></section>
+        <section class="content"></section>--%>
+                <!-- Main content -->
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <footer class="main-footer">
+                <strong>Copyright &copy; 2014-2015 <a href="javascript:void(0);">Kosus Solutions</a>.</strong> All rights reserved.
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.1.3 -->
+        <script src="../plugins/jQuery/jQuery-2.1.3.min.js"></script>
+        <!-- Bootstrap 3.3.2 JS -->
+        <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Morris.js charts -->
+
+
+        <script src="../plugins/morris/morris.min.js" type="text/javascript"></script>
+        <!-- SlimScroll 1.3.0 -->
+        <script src="../plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <!-- FastClick -->
+
+        <!-- AdminLTE App -->
+        <script src="../dist/js/app.min.js" type="text/javascript"></script>
+        <!-- AdminLTE for demo purposes -->
+
+
+
+
+    </form>
+</body>
+</html>
