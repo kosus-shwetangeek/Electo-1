@@ -283,6 +283,7 @@ namespace Electo.DataLayer.Implementation
         /// <param name="xiStudent">Student Object</param>
         /// <param name="xiOperationMode">Select mode Add Update Delete</param>
         /// <returns></returns>
+
         public bool AddUpdateDelStudent(StudentEntity xiStudent, string xiOperationMode)
         {
             bool isSuccess = false;
@@ -335,6 +336,63 @@ namespace Electo.DataLayer.Implementation
                 return isSuccess;
             }
         }
+        /*  public bool AddUpdateDelStaff(StaffEntity xiStaff, string xiOperationMode)
+          {
+              bool isSuccess = false;
+
+              try
+              {
+                  using (MultiCon mySqlHelper = new MultiCon(ConfigurationManager.ConnectionStrings["dbConnectionString"].ConnectionString))
+                  {
+                      if (xiOperationMode == "D")
+                      {
+                          if (mySqlHelper.SendQuery(CommandType.StoredProcedure, ProcedureConstant.SPDeleteStaff,
+                                                      new ParameterData("pistf_key", xiStaff.Stf_Key),
+                                                      new ParameterData("piuser_id", 1)) > 0)
+                          {
+                              isSuccess = true;
+                          }
+                      }
+                      else
+                      {
+                          if (mySqlHelper.SendQuery(CommandType.StoredProcedure, ProcedureConstant.SPAddUpdateDelStudent,
+                                                 
+                                                      new ParameterData("pistf_Key", xiStaff.Stf_Key),
+                                                      new ParameterData("pistf_FirstName", xiStaff.Stf_FirstName),
+                                                      new ParameterData("pistf_LastName", xiStaff.Stf_LastName),
+                                                      new ParameterData("pistf_MiddleName", xiStaff.Stf_MiddleName),
+                                                      new ParameterData("pistf_DoB", xiStaff.Stf_DoB.Date.ToString("yyyy-MM-dd")),
+                                                       new ParameterData("pistf_EmailId", xiStaff.Stf_EmailId),
+                                                      new ParameterData("pistf_ContactNo", xiStaff.Stf_ContactNo),
+                                                      new ParameterData("pistf_GenderId", xiStaff.Stf_GenderId),
+                                                      new ParameterData("pistf_AddressId", xiStaff.Stf_AddressId),
+         *                                            new ParameterData("pistf_RoleId", xiStaff.Stf_RoleId),
+         *                                            new ParameterData("pistf_CreatedDate", xiStudent.Stf_CreatedDate),
+         *                                            new ParameterData("pistf_CreatedBy", xiStaff.Stf_CreatedDate),
+                                                      new ParameterData("pistud_Password", xiStudent.Stud_Password),
+         *                                            new ParameterData("pistf_Photo", xiStaff.Stf_Photo),
+                                                      new ParameterData("piAction", xiOperationMode),
+                                                      new ParameterData("piuser_id", 1)) > 0)
+                          {
+                              isSuccess = true;
+                          }
+                      }
+                  }
+
+                  return isSuccess;
+              }
+              catch (Exception ex)
+              {
+                  using (MultiCon mySqlHelper = new MultiCon(ConfigurationManager.ConnectionStrings["dbConnectionString"].ConnectionString))
+                  {
+                      mySqlHelper.SendQuery(CommandType.StoredProcedure,
+                                              ProcedureConstant.SPLoggError,
+                                              new ParameterData("piSeverityId", (int)ENums.EWSSeverity.Error),
+                                              new ParameterData("piDescription", ex.ToString()));
+                  }
+                  return isSuccess;
+              }
+          }*/
 
 
         public int GetCurrentStudentId()

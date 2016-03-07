@@ -1,5 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Staff.Master" AutoEventWireup="true" CodeBehind="HouseMaster.aspx.cs" Inherits="ElectoSystem.Admin.HouseMaster" %>
 
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="../dist/css/jsgrid.css" />
     <link rel="stylesheet" type="text/css" href="../dist/css/theme.css" />

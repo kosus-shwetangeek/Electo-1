@@ -6,3 +6,12 @@ D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.dll
 D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.pdb
 D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.dll
 D:\DotNet\SVN\Code\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.pdb
+F:\Shwetangee_Workspace\CodeRepository\Electo\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.dll
+F:\Shwetangee_Workspace\CodeRepository\Electo\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.pdb
+F:\Shwetangee_Workspace\CodeRepository\Electo\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.csprojResolveAssemblyReference.cache
+F:\Shwetangee_Workspace\CodeRepository\Electo\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.dll
+F:\Shwetangee_Workspace\CodeRepository\Electo\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.pdb
+D:\Shwetangee\CodeRepository\Electo\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.dll
+D:\Shwetangee\CodeRepository\Electo\ElectoSystem\Electo.Constants\bin\Debug\Electo.Constants.pdb
+D:\Shwetangee\CodeRepository\Electo\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.dll
+D:\Shwetangee\CodeRepository\Electo\ElectoSystem\Electo.Constants\obj\Debug\Electo.Constants.pdb

@@ -267,5 +267,60 @@ namespace Electo.DataLayer.Implementation
                 return null;
             }
         }
+    
+     /* public StaffEntity GetUserSession(string UserName, string UserType)
+        {
+            try
+            {
+                StaffEntity staffSession = null;
+
+                using (MultiCon mySqlHelper = new MultiCon(ConfigurationManager.ConnectionStrings["dbConnectionString"].ConnectionString))
+                {
+                    DataTable dtStaff = mySqlHelper.GetDataTable(CommandType.StoredProcedure, ProcedureConstant.SPGetUserSession,
+                                                                new ParameterData("piUserName", UserName), new ParameterData("piUserType", UserType));
+
+                    foreach (DataRow dr in dtStaff.Rows)
+                    {
+                        staffSession = new StaffEntity();
+                        
+                        staffSession.Stf_Key = dr["Stf_Key"].ToString();
+                        //staffSession.Stud_Name = dr["StudentName"].ToString();
+                        stafftSession.Stf_FirstName = dr["Stf_FirstName"].ToString();
+                        staffSession.Stf_MiddleName = dr["stud_MiddleName"].ToString();
+                        studentSession.Stud_LName = dr["stud_LastName"].ToString();
+                        studentSession.Stud_DoB = Convert.ToDateTime(dr["stud_DoB"]);
+                        studentSession.Stud_GenderId = Convert.ToInt32(dr["stud_GenderId"]);
+                        studentSession.Stud_Gender = dr["stud_Gender"].ToString();
+                        studentSession.Stud_GenderCode = dr["stud_GenderCode"].ToString();
+                        studentSession.Stud_ClassSectionId = Convert.ToInt32(dr["stud_ClassSectionId"]);
+                        studentSession.Stud_ClassId = Convert.ToInt32(dr["stud_ClassId"]);
+                        studentSession.Stud_Class = dr["stud_Class"].ToString();
+                        studentSession.Stud_SectionId = Convert.ToInt32(dr["stud_SectionId"]);
+                        studentSession.Stud_Section = dr["stud_Section"].ToString();
+                        studentSession.Stud_ClassSection = dr["stud_ClassSection"].ToString();
+                        studentSession.Stud_HouseId = Convert.ToInt32(dr["stud_HouseId"]);
+                        studentSession.Stud_HouseName = dr["stud_HouseName"].ToString();
+                        studentSession.Stud_UserType = dr["stud_UserType"].ToString();
+                        studentSession.Stud_HouseCode = dr["stud_HouseCode"].ToString();
+                        studentSession.Stud_Photo = dr["stud_Photo"].ToString();//Convert.ToInt32(dr["stud_GenderId"]) == 1 ? "../dist/img/boy.png" : "../dist/img/dT7eM7rac.png";// string.Empty;// dr.GetString(19);
+
+                        break;
+                    }
+                }
+
+                return studentSession;
+            }
+            catch (Exception ex)
+            {
+                using (MultiCon mySqlHelper = new MultiCon(ConfigurationManager.ConnectionStrings["dbConnectionString"].ConnectionString))
+                {
+                    mySqlHelper.SendQuery(CommandType.StoredProcedure,
+                                            ProcedureConstant.SPLoggError,
+                                            new ParameterData("piSeverityId", (int)ENums.EWSSeverity.Error),
+                                            new ParameterData("piDescription", ex.ToString()));
+                }
+                return null;
+            }
+        }*/
     }
 }

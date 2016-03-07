@@ -9,10 +9,12 @@
         public const string SPVerifyUser = "SP_VerifyUser";
         public const string SPLoggError = "SP_LoggError";
         public const string SPGetAllStudents = "SP_GetAllStudents";
+        public const  string SPGetAllStaff="SP_GetAllStaffs";
         public const string SPGetAllSenateNominees = "SP_GetAllSenateNominee";
         public const string SPGetHouseNominationsNameByHouseId = "SP_GetHouseNominationsNameByHouseId";
         public const string SPUpdateCandidateVote = "SP_UpdateCandidateVote";
         public const string SPGetVoteStatus = "SP_GetVoteStatus";
+        public const string SPGetVoteStatusofStaff = "SP_GetVoteStatusofStaff";
         public const string SPGetAllHouses = "SP_GetAllHouses";
         public const string SPAddDelHouses = "SP_AddUpdateDelHouses";
         public const string SPAddUpdateDelSenateDesignation = "SP_AddUpdateDelSenateDesignation";
@@ -21,6 +23,8 @@
         public const string SP_GetAllHouseDesignation = "SP_GetAllHouseDesignation";
         public const string SPAddUpdateDelStudent = "SP_AddUpdateDelStudent";
         public const string SPDeleteStudent = "SP_DeleteStudent";
+        public const string SPDeleteStaff = "SP_DeleteStaff";
+        public  const string SPADDUpdateDelStaff="SP_AddUpdateDelStaff";
         public const string SPGetHouseElection = "SP_GetHouseElection";
         public const string SPAddUpdateDeleteHouseElection = "SP_AddUpdateDeleteHouseElection";
         public const string SPGetSenateElection = "SP_GetSenateElection";

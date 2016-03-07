@@ -34,6 +34,8 @@ namespace ElectoSystem.Helper
         {
             Mapper.CreateMap<ElectoSystem.Entities.StudentEntity, Electo.DataLayer.Entities.StudentEntity>();
             Mapper.CreateMap<Electo.DataLayer.Entities.StudentEntity, ElectoSystem.Entities.StudentEntity>();
+            //Mapper.CreateMap<ElectoSystem.Entities.StaffEntity, Electo.DataLayer.Entities.StaffEntity>();
+            //Mapper.CreateMap<Electo.DataLayer.Entities.StaffEntity, ElectoSystem.Entities.StaffEntity>();
             Mapper.CreateMap<Elections, ElectionsEntity>();
             Mapper.CreateMap<ElectionsEntity, Elections>();
             Mapper.CreateMap<NomineesEntity, Nominees>();
@@ -42,6 +44,7 @@ namespace ElectoSystem.Helper
             Mapper.CreateMap<VotetedStudents, VotedStudentsEntity>();
             Mapper.CreateMap<ClassSectionEntity, ClassSection>();
             Mapper.CreateMap<ClassSection, ClassSectionEntity>();
+           
         }
 
         #endregion Constructor
@@ -428,5 +431,46 @@ namespace ElectoSystem.Helper
         #endregion ClassSection
 
         #endregion Member Function
+//        #region Staff Function
+
+        //List<ElectoSystem.Entities.StaffEntity> lStaffEntityList = new List<ElectoSystem.Entities.StaffEntity>();
+//        internal List<ElectoSystem.Entities.StaffEntity> GetAllStaffHelp()
+//        {
+//            if (HttpContext.Current.Cache[Common.UIConstants.cache_AllStaffs] == null)
+//            {
+//                lStaffEntityList = Mapper.Map<List<Electo.DataLayer.Entities.StaffEntity>, List<ElectoSystem.Entities.StaffEntity>>(mAuthentication.GetAllStaff());
+
+//                if (lStudentEntityList != null && lStudentEntityList.Count > 0)
+//                {
+//                    HttpContext.Current.Cache.Insert(Common.UIConstants.cache_AllStudents, lStudentEntityList, null, DateTime.Now.AddDays(1), System.Web.Caching.Cache.NoSlidingExpiration);
+//                }
+//            }
+//            else
+//            {
+//                lStaffEntityList = (List<ElectoSystem.Entities.StaffEntity>)HttpContext.Current.Cache[Common.UIConstants.cache_AllStaffs];
+//            }
+//            return lStaffEntityList;
+//        }
+
+//        internal ElectoSystem.Entities.StaffEntity GetStaffByUserId(string UserId)
+//        {
+//            if (HttpContext.Current.Cache[Common.UIConstants.cache_AllStaff] == null)
+//            {
+//                lStaffEntityList = Mapper.Map<List<Electo.DataLayer.Entities.StaffEntity>, List<ElectoSystem.Entities.StudentEntity>>(mAuthentication.GetAllStaff());
+
+//                if (lStaffEntityList != null && lStaffEntityList.Count > 0)
+//                {
+//                    HttpContext.Current.Cache.Insert(Common.UIConstants.cache_AllStaffs, lStaffEntityList, null, DateTime.Now.AddDays(1), System.Web.Caching.Cache.NoSlidingExpiration);
+//                }
+//            }
+//            else
+//            {
+//                lStaffEntityList = (List<ElectoSystem.Entities.StaffEntity>)HttpContext.Current.Cache[Common.UIConstants.cache_AllStaffs];
+//            }
+
+//            // return lStaffEntityList.Where(X => X.Stf_Key.ToLower() ==UserId.ToLower()).FirstOrDefault();
+//        }
+//#end Staff Function
+
     }
 }

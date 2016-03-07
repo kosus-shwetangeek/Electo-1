@@ -50,7 +50,9 @@
     <Compile Include="Entities\ClassSection.cs" />
     <Compile Include="Entities\Elections.cs" />
     <Compile Include="Entities\Nominees.cs" />
+    <Compile Include="Entities\StaffEntity.cs" />
     <Compile Include="Entities\StudentEntity.cs" />
+    <Compile Include="Entities\VotedStaff.cs" />
     <Compile Include="Entities\VotetedStudents.cs" />
     <Compile Include="Implementation\Admin.cs" />
     <Compile Include="Implementation\Authentication.cs" />
@@ -63,6 +65,9 @@
       <Project>{b5a6e3f0-fdc3-4283-8a2b-2eadeda2a3b8}</Project>
       <Name>Electo.Constants</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

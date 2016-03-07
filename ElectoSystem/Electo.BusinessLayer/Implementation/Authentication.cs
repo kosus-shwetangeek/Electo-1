@@ -12,8 +12,10 @@ namespace Electo.BusinessLayer.Implementation
         Electo.DataLayer.Implementation.Authentication lAuthentication = new DataLayer.Implementation.Authentication();
         Nominees studNom = new Nominees();
         StudentEntity studentSession = new StudentEntity();
+        //Electo.DataLayer.Entities.StaffEntity staffSession = new StaffEntity();
         List<StudentEntity> studentSessionList = new List<StudentEntity>();
-
+        //Electo.DataLayer.Entities.StaffEntity StaffSession = new StaffEntity();
+        //List<StaffEntity> StaffSessionList = new List<StaffEntity>();
         /// <summary>
         /// Gets all student.
         /// </summary>
@@ -23,6 +25,16 @@ namespace Electo.BusinessLayer.Implementation
             //authentication = new DataLayer.Implementation.Authentication();
             return studentSessionList = lAuthentication.GetAllStudent();
         }
+        /// <summary>
+        /// Gets all staff.
+        /// </summary>
+        /// <returns>DataTable.</returns>
+       // public List<StaffEntity> GetAllStaff()
+        //{
+            //authentication = new DataLayer.Implementation.Authentication();
+          //  return StaffSessionList = lAuthentication.GetAllStaff();
+        //}
+
 
         /// <summary>
         /// Gets the student by election identifier.
@@ -65,6 +77,25 @@ namespace Electo.BusinessLayer.Implementation
         {
             //authentication = new DataLayer.Implementation.Authentication();
             return studentSession = lAuthentication.GetUserSession(UserName, UserType);
+        //    public StaffEntity CheckStaffExist(string UserName, string Password)
+        //{
+        //    //authentication = new DataLayer.Implementation.Authentication();
+        //    return StaffSession = lAuthentication.CheckStudentExist(UserId, Password);
+        //}
+        //public bool UpdateResetPassword(string UserName, string Password, DateTime DoB)
+        //{
+        //    //authentication = new DataLayer.Implementation.Authentication();
+        //    return lAuthentication.UpdateResetPassword(UserName, Password, DoB);
+        //}
+
+
+        //public StaffEntity GetUserSession(string UserName, string UserType      
+        //{
+        //    //authentication = new DataLayer.Implementation.Authentication();
+        //    return StaffSession = lAuthentication.GetUserSession(UserName, UserType);
+        //}
+
+
         }
     }
 }

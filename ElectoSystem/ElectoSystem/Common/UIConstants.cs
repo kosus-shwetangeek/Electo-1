@@ -41,6 +41,7 @@ namespace ElectoSystem.Common
         public static string cache_AllClasses = "AllClasses";
         public static string cache_AllSections = "AllSections";
         public static string cache_AllClassSections = "AllClassSections";
+        public const string cache_AllStaffs = "AllStaffs";
         #endregion
     }
 }

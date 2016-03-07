@@ -96,6 +96,7 @@
     <Content Include="Admin\SenateDesignation.aspx" />
     <Content Include="Admin\SenateElection.aspx" />
     <Content Include="Admin\SenateNomination.aspx" />
+    <Content Include="Admin\Staff.aspx" />
     <Content Include="Admin\StudentHouseMaster.aspx" />
     <Content Include="Admin\StudentMaster.aspx" />
     <Content Include="Authenticate\ForgetPassword.aspx" />
@@ -404,6 +405,13 @@
     <Compile Include="Admin\SenateNomination.aspx.designer.cs">
       <DependentUpon>SenateNomination.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Staff.Master.cs">
       <DependentUpon>Staff.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -479,7 +487,9 @@
     <Compile Include="Entities\Designation.cs" />
     <Compile Include="Entities\ElectionsEntity.cs" />
     <Compile Include="Entities\NomineesEntity.cs" />
+    <Compile Include="Entities\StaffEntity.cs" />
     <Compile Include="Entities\StudentEntity.cs" />
+    <Compile Include="Entities\VotedStaff.cs" />
     <Compile Include="Entities\VotetedStudentsEntity.cs" />
     <Compile Include="Helper\DashboardHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
